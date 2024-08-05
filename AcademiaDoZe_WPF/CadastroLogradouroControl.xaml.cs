@@ -24,5 +24,7 @@ namespace AcademiaDoZe_WPF
         {
             InitializeComponent();
         }
+
+       
     }
 }

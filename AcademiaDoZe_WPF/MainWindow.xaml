@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFEAE8E8" Margin="0,0,0,-6">
         <Canvas Margin="10,72,0,10" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="170">
-            <Label x:Name="label_home" Content="Home" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="label_home" Content="Home" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" MouseLeftButtonDown="label_home_MouseLeftButtonDown"/>
             <Label x:Name="label_logradouro" Content="Logradouro" Canvas.Left="10" Canvas.Top="39" Width="124" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="label_aluno" Content="Aluno" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="68" VerticalAlignment="Top" Width="75"/>
             <Label x:Name="label_colaborador" Content="Colaborador" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="97" VerticalAlignment="Top" Width="119"/>
