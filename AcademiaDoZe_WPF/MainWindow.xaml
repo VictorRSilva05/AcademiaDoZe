@@ -6,21 +6,24 @@
         xmlns:local="clr-namespace:AcademiaDoZe_WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FFFAFAFA">
-        <Canvas Margin="10,72,0,10" Background="#FFEAE8E8" HorizontalAlignment="Left" Width="170">
-            <TextBox x:Name="button_home" Canvas.Left="10" TextWrapping="Wrap" Text="Home" Canvas.Top="10" Width="120" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
-            <TextBox x:Name="button_logradouro" Canvas.Left="10" TextWrapping="Wrap" Text="Logradouro" Canvas.Top="33" Width="120" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="button_aluno" TextWrapping="Wrap" Text="Aluno" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="56" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_colaborador" TextWrapping="Wrap" Text="Colaborador" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="79" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_senha" TextWrapping="Wrap" Text="Senha" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="102" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_matricula" TextWrapping="Wrap" Text="Matrícula" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="125" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_avaliacao" TextWrapping="Wrap" Text="Avaliação" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="148" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_frequencia" TextWrapping="Wrap" Text="Frequência" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="171" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_aulas" TextWrapping="Wrap" Text="Aulas" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="194" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_treinos" TextWrapping="Wrap" Text="Treinos" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="217" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="button_login_logoff" TextWrapping="Wrap" Text="Login/Logoff" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="240" VerticalAlignment="Top" Width="120"/>
+    <Grid Background="#FFEAE8E8" Margin="0,0,0,-6">
+        <Canvas Margin="10,72,0,10" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="170">
+            <Label x:Name="label_home" Content="Home" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14"/>
+            <Label x:Name="label_logradouro" Content="Logradouro" Canvas.Left="10" Canvas.Top="39" Width="124" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label_aluno" Content="Aluno" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="68" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label_colaborador" Content="Colaborador" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="97" VerticalAlignment="Top" Width="119"/>
+            <Label x:Name="label_senha" Content="Senha" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="126" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label_matricula" Content="Matrícula" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Height="29" Canvas.Left="8" Canvas.Top="155" VerticalAlignment="Top" Width="76"/>
+            <Label x:Name="label_avaliacao" Content="Avaliação" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="184" VerticalAlignment="Top" Width="96"/>
+            <Label x:Name="label_frequencia" Content="Frequência" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="213" VerticalAlignment="Top" Width="147"/>
+            <Label x:Name="label_aulas" Content="Aulas" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="242" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label_treinos" Content="Treinos" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="271" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label_login_logoff" Content="Login/Logoff" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="300" VerticalAlignment="Top" Width="108"/>
+
         </Canvas>
-        <TextBox x:Name="title_academia_do_ze" HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="Academia do Zé" VerticalAlignment="Top" Width="280" FontFamily="Arial" Height="44" FontSize="36" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Label x:Name="label_title_academia_do_ze" Content="Academia do Zé" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" Height="50" FontFamily="MiSans Latin VF 
+               " Margin="10,0,0,0"/>
+        <Label Content="Push it to the limit" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontSize="10" RenderTransformOrigin="0.22,1.226" Width="104" FontWeight="Bold"/>
 
     </Grid>
 </Window>
