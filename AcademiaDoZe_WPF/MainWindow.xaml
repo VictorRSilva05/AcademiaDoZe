@@ -1,0 +1,26 @@
+﻿<Window x:Class="AcademiaDoZe_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademiaDoZe_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFFAFAFA">
+        <Canvas Margin="10,72,0,10" Background="#FFEAE8E8" HorizontalAlignment="Left" Width="170">
+            <TextBox x:Name="button_home" Canvas.Left="10" TextWrapping="Wrap" Text="Home" Canvas.Top="10" Width="120" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+            <TextBox x:Name="button_logradouro" Canvas.Left="10" TextWrapping="Wrap" Text="Logradouro" Canvas.Top="33" Width="120" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="button_aluno" TextWrapping="Wrap" Text="Aluno" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="56" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_colaborador" TextWrapping="Wrap" Text="Colaborador" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="79" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_senha" TextWrapping="Wrap" Text="Senha" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="102" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_matricula" TextWrapping="Wrap" Text="Matrícula" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="125" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_avaliacao" TextWrapping="Wrap" Text="Avaliação" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="148" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_frequencia" TextWrapping="Wrap" Text="Frequência" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="171" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_aulas" TextWrapping="Wrap" Text="Aulas" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="194" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_treinos" TextWrapping="Wrap" Text="Treinos" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="217" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="button_login_logoff" TextWrapping="Wrap" Text="Login/Logoff" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Height="18" Canvas.Left="10" Canvas.Top="240" VerticalAlignment="Top" Width="120"/>
+        </Canvas>
+        <TextBox x:Name="title_academia_do_ze" HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="Academia do Zé" VerticalAlignment="Top" Width="280" FontFamily="Arial" Height="44" FontSize="36" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>
