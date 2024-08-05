@@ -12,12 +12,12 @@
         <Canvas Margin="41,65,42,67" Background="#FFFAFAFA">
             <Label x:Name="label_id" Content="ID" Canvas.Left="53" Canvas.Top="54" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <TextBox x:Name="textbox_id" Canvas.Left="53" TextWrapping="Wrap" Canvas.Top="85" Width="63" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox x:Name="textbox_cep" Canvas.Left="155" TextWrapping="Wrap" Canvas.Top="85" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="textbox_cep" Canvas.Left="155" TextWrapping="Wrap" Canvas.Top="85" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_logradouro" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="85" Width="369" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="label_cep" Content="CEP" Canvas.Left="155" Canvas.Top="54" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <Label x:Name="label_logradouro" Content="Logradouro:" Canvas.Left="294" Canvas.Top="54" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
             <Label x:Name="label_bairro" Content="Bairro:" Canvas.Left="53" Canvas.Top="140" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-            <TextBox x:Name="textbox_bairro" Canvas.Left="53" TextWrapping="Wrap" Canvas.Top="171" Width="222" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="textbox_bairro" Canvas.Left="53" TextWrapping="Wrap" Canvas.Top="171" Width="222" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <TextBox x:Name="textbox_cidade" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="171" Width="369" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="label_cidade" Content="Cidade:" Canvas.Left="294" Canvas.Top="140" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_pais" TextWrapping="Wrap" Width="486" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="260" VerticalAlignment="Center"/>
