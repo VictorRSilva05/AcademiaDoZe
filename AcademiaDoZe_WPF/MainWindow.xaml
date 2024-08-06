@@ -5,25 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AcademiaDoZe_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FFEAE8E8" Margin="0,0,0,-6">
+        Title="MainWindow" Height="516" Width="889">
+    <Grid Background="#FFEAE8E8" Margin="0,0,0,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Canvas Margin="10,72,0,10" Background="#FFFAFAFA" HorizontalAlignment="Left" Width="170">
-            <Label x:Name="label_home" Content="Home" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" MouseLeftButtonDown="label_home_MouseLeftButtonDown"/>
-            <Label x:Name="label_logradouro" Content="Logradouro" Canvas.Left="10" Canvas.Top="39" Width="124" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_aluno" Content="Aluno" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="68" VerticalAlignment="Top" Width="75"/>
-            <Label x:Name="label_colaborador" Content="Colaborador" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="97" VerticalAlignment="Top" Width="119"/>
-            <Label x:Name="label_senha" Content="Senha" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="126" VerticalAlignment="Top" Width="75"/>
-            <Label x:Name="label_matricula" Content="Matrícula" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Height="29" Canvas.Left="8" Canvas.Top="155" VerticalAlignment="Top" Width="76"/>
-            <Label x:Name="label_avaliacao" Content="Avaliação" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="184" VerticalAlignment="Top" Width="96"/>
-            <Label x:Name="label_frequencia" Content="Frequência" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="213" VerticalAlignment="Top" Width="147"/>
-            <Label x:Name="label_aulas" Content="Aulas" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="242" VerticalAlignment="Top" Width="75"/>
-            <Label x:Name="label_treinos" Content="Treinos" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="271" VerticalAlignment="Top" Width="75"/>
-            <Label x:Name="label_login_logoff" Content="Login/Logoff" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Height="29" Canvas.Left="10" Canvas.Top="300" VerticalAlignment="Top" Width="108"/>
+            <Button x:Name="button_home" Content="Home" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="10" VerticalAlignment="Center" Width="150" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_logradouro" Content="Logradouro" Canvas.Left="10" Canvas.Top="35" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold" Click="button_logradouro_Click"/>
+            <Button x:Name="button_aluno" Content="Aluno" Canvas.Left="10" Canvas.Top="60" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold" Click="button_aluno_Click"/>
+            <Button x:Name="button_colaborador" Content="Colaborador" Canvas.Left="10" Canvas.Top="85" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_senha" Content="Senha" Canvas.Left="10" Canvas.Top="110" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_matricula" Content="Matrícula" Canvas.Left="10" Canvas.Top="135" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_avaliacao" Content="Avaliação" Canvas.Left="10" Canvas.Top="160" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_frequencia" Content="Frequência" Canvas.Left="10" Canvas.Top="185" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_aulas" Content="Aulas" Canvas.Left="10" Canvas.Top="210" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_treinos" Content="Treinos" Canvas.Left="10" Canvas.Top="235" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Button x:Name="button_login_logoff" Content="Login/Logoff" Canvas.Left="10" Canvas.Top="260" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF 
+                    " FontWeight="Bold"/>
 
         </Canvas>
         <Label x:Name="label_title_academia_do_ze" Content="Academia do Zé" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" Height="50" FontFamily="MiSans Latin VF 
                " Margin="10,0,0,0"/>
         <Label Content="Push it to the limit" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontSize="10" RenderTransformOrigin="0.22,1.226" Width="104" FontWeight="Bold"/>
+        <ContentControl x:Name="ContentControl_main" Content="" Margin="185,72,10,10" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

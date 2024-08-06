@@ -21,9 +21,19 @@ namespace AcademiaDoZe_WPF
             InitializeComponent();
         }
 
-        private void label_home_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+
+        private void button_logradouro_Click(object sender, RoutedEventArgs e)
         {
             CadastroLogradouroControl cadastroLogradouroControl = new CadastroLogradouroControl();
+
+            ContentControl_main.Content = cadastroLogradouroControl;
+        }
+
+        private void button_aluno_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroAlunoControl cadastroAlunoControl = new CadastroAlunoControl();
+
+            ContentControl_main.Content = cadastroAlunoControl;
         }
     }
 }
