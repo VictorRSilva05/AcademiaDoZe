@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademiaDoZe_WPF"
-             mc:Ignorable="d" Width="677" Height="571" Loaded="UserControl_Loaded">
-    <Grid Background="#FFEAE8E8" Margin="10,10,0,10">
+             mc:Ignorable="d" Width="677" Height="617" Loaded="UserControl_Loaded">
+    <Grid Background="#FFEAE8E8" Margin="10,10,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="380*"/>
             <RowDefinition Height="9*"/>
@@ -24,7 +24,7 @@
             <DatePicker x:Name="datepicker_nascimento" Canvas.Left="54" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24"/>
             <TextBox x:Name="textbox_email" Canvas.Left="224" TextWrapping="Wrap" Canvas.Top="190" Width="327" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="label_email" Content="Email:" Canvas.Left="225" Canvas.Top="159" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Canvas Background="#FFFAFAFA" RenderTransformOrigin="0.5,0.5" Height="213" Canvas.Left="2" Canvas.Top="251" VerticalAlignment="Center" Width="579" HorizontalAlignment="Left">
+            <Canvas Background="#FFFAFAFA" RenderTransformOrigin="0.5,0.5" Height="213" Canvas.Top="218" VerticalAlignment="Center" Width="584" HorizontalAlignment="Left">
                 <Canvas.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -49,6 +49,7 @@
                 <Label x:Name="label_uf_endereco_aluno" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Canvas>
         </Canvas>
+        <Button x:Name="button_salvar_aluno" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="492,532,0,0"/>
 
     </Grid>
 </UserControl>

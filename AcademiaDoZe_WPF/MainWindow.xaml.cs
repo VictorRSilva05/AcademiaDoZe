@@ -35,5 +35,12 @@ namespace AcademiaDoZe_WPF
 
             ContentControl_main.Content = cadastroAlunoControl;
         }
+
+        private void button_colaborador_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroColaboradorControl cadastroColaboradorControl = new CadastroColaboradorControl();
+
+            ContentControl_main.Content = cadastroColaboradorControl;
+        }
     }
 }
