@@ -52,7 +52,11 @@
         <Button x:Name="button_salvar_colaborador" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,257,0,0" Grid.Row="1"/>
         <DatePicker HorizontalAlignment="Left" Margin="655,176,0,0" VerticalAlignment="Top"/>
         <Label Content="Admissão" HorizontalAlignment="Left" Margin="655,145,0,0" VerticalAlignment="Top" Width="138" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-        <RadioButton x:Name="radio_clt" Content="CLT" HorizontalAlignment="Left" Margin="655,216,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+        <RadioButton x:Name="radio_clt" Content="CLT" HorizontalAlignment="Left" Margin="655,216,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="TipoEmprego"/>
+        <RadioButton x:Name="radio_estagio" Content="Estágio" HorizontalAlignment="Left" Margin="655,236,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="TipoEmprego"/>
+        <RadioButton x:Name="radio_administrador" Content="Administrador" HorizontalAlignment="Left" Margin="655,37,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
+        <RadioButton x:Name="radio_atendente" Content="Atendente" HorizontalAlignment="Left" Margin="655,57,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
+        <RadioButton x:Name="radio_instrutor" Content="Instrutor" HorizontalAlignment="Left" Margin="655,77,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
 
     </Grid>
 </UserControl>
