@@ -1,0 +1,29 @@
+﻿<Window x:Class="AcademiaDoZe_WPF.CadastrarSenhaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademiaDoZe_WPF"
+        mc:Ignorable="d"
+        Title="CadastrarSenhaWindow" Height="450" Width="456">
+    <Grid HorizontalAlignment="Right" Width="456" Background="#FFEAE8E8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="167*"/>
+            <RowDefinition Height="267*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="title_cadastrar_senha" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Cadastrar Senha" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50"/>
+        <Canvas Margin="24,76,23,79" Background="White" Grid.RowSpan="2">
+            <Label x:Name="label_id_senha" Content="ID" Canvas.Left="25" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_senha" Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="193" Width="157" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.133,0.589"/>
+            <TextBox x:Name="textbox_cpf_senha" Canvas.Left="220" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_cpf_senha" Content="CPF" Canvas.Left="220" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.365,0.276"/>
+            <Label x:Name="label_nome_senha" Content="Nome:" Canvas.Left="25" Canvas.Top="92" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
+            <TextBox x:Name="textbox_nome_senha" Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="123" Width="361" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Label x:Name="label_senha" Content="Senha:" Canvas.Left="25" Canvas.Top="162" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="label_re_senha" Content="Re-senha:" Canvas.Left="212" Canvas.Top="162" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_senha_Copy" Canvas.Left="212" TextWrapping="Wrap" Canvas.Top="193" Width="174" RenderTransformOrigin="0.133,0.589" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_id_senha" Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="56" Width="63" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <Button x:Name="button_salvar_senha" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,205,0,0" Grid.Row="1"/>
+    </Grid>
+</Window>

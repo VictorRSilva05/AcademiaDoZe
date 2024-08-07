@@ -42,5 +42,12 @@ namespace AcademiaDoZe_WPF
 
             ContentControl_main.Content = cadastroColaboradorControl;
         }
+
+        private void button_senha_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarSenhaWindow cadastrarSenhaWindow = new CadastrarSenhaWindow();
+
+           cadastrarSenhaWindow.Show();
+        }
     }
 }
