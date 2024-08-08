@@ -47,7 +47,14 @@ namespace AcademiaDoZe_WPF
         {
             CadastrarSenhaWindow cadastrarSenhaWindow = new CadastrarSenhaWindow();
 
-           cadastrarSenhaWindow.Show();
+            cadastrarSenhaWindow.Show();
+        }
+
+        private void button_matricula_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarMatriculaControl cadastrarMatriculaControl = new CadastrarMatriculaControl();
+            
+            ContentControl_main.Content = cadastrarMatriculaControl;
         }
     }
 }

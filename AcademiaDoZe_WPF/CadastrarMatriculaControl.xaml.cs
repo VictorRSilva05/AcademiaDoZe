@@ -24,5 +24,10 @@ namespace AcademiaDoZe_WPF
         {
             InitializeComponent();
         }
+
+        private void checkbox_problemas_cardiacos_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

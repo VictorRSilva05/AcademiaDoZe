@@ -4,20 +4,52 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademiaDoZe_WPF"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d" d:DesignWidth="800" Height="668">
     <Grid Background="#FFEAE8E8">
-        <Canvas Margin="56,70,56,70" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="87*"/>
+        </Grid.RowDefinitions>
+        <Canvas Margin="0,70,0,97" Background="White" HorizontalAlignment="Center" Width="688" Grid.RowSpan="2">
             <Label x:Name="label_id_matricula" Content="ID:" HorizontalAlignment="Left" Canvas.Left="34" Canvas.Top="25" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_id_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="56" Width="82" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_id_aluno_matricula" Content="ID Aluno:" Canvas.Left="159" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_id_aluno_matricula" Canvas.Left="159" TextWrapping="Wrap" Canvas.Top="56" Width="82" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="label_cpf_aluno_matricula" Content="CPF Aluno:" Canvas.Left="291" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_cpf_aluno_matricula" Canvas.Left="291" TextWrapping="Wrap" Canvas.Top="56" Width="120"/>
+            <TextBox x:Name="textbox_id_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="56" Width="64" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_id_aluno_matricula" Content="ID Aluno:" Canvas.Left="138" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <TextBox x:Name="textbox_id_aluno_matricula" Canvas.Left="141" TextWrapping="Wrap" Canvas.Top="56" Width="61" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_cpf_aluno_matricula" Content="CPF Aluno:" Canvas.Left="250" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <TextBox x:Name="textbox_cpf_aluno_matricula" Canvas.Left="250" TextWrapping="Wrap" Canvas.Top="56" Width="94" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="label_nome_aluno_matricula" Content="Nome Aluno:" Canvas.Left="34" Canvas.Top="96" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_nome_aluno_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="127" Width="377" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_nome_aluno_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="127" Width="310" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_plano" Content="Plano" Canvas.Left="34" Canvas.Top="179" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radio_mensal" Content="Mensal" Canvas.Left="34" Canvas.Top="210" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <RadioButton x:Name="Trimestral" Content="Trimestral" Canvas.Left="34" Canvas.Top="227" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
+            <RadioButton x:Name="radio_semestral" Content="Semestral" Canvas.Left="34" Canvas.Top="245" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
+            <RadioButton x:Name="radio_anual" Content="Anual" Canvas.Left="34" Canvas.Top="263" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
+            <Label x:Name="label_inicio" Content="Início" Canvas.Left="181" Canvas.Top="179" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <DatePicker x:Name="datepicker_inicio" Canvas.Left="181" Canvas.Top="205"/>
+            <Label x:Name="label_fim" Content="Fim" Canvas.Left="181" Canvas.Top="228" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <DatePicker x:Name="datepicker_fim" Canvas.Left="181" Canvas.Top="254"/>
+            <Label x:Name="label_objetivo" Content="Objetivo:" Canvas.Left="34" Canvas.Top="299" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_objetivo" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_objetivo_Copy" Canvas.Left="395" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_observacao_restricao" Content="Observação Restrição" Canvas.Left="395" Canvas.Top="299" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_restricoes" Content="Restrições" Canvas.Left="383" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF 
+" FontWeight="Bold"/>
+            <Rectangle Height="207" Canvas.Left="377" Stroke="Black" Canvas.Top="56" Width="164" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_nenhuma" Content="Nenhuma" Canvas.Left="386" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82"/>
+            <CheckBox x:Name="checkbox_problemas_cardiacos" Content="Problemas respiratórios" Canvas.Left="386" Canvas.Top="82" Width="149" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="checkbox_problemas_cardiacos_Checked"/>
+            <CheckBox x:Name="checkbox_lesoes_musculares" Content="Lesões musculares" Canvas.Left="386" Canvas.Top="101" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_pressao_alta" Content="Pressão alta" Canvas.Left="386" Canvas.Top="121" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_diabetes" Content="Diabetes" Canvas.Left="386" Canvas.Top="141" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_gravidez" Content="Gravidez" Canvas.Left="386" Canvas.Top="159" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_labirinto" Content="Labirinto" Canvas.Left="386" Canvas.Top="179" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_alergias" Content="Alergias" Canvas.Left="386" Canvas.Top="198" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_remedios_uso_continuo" Content="Remédios uso contínuo" Canvas.Left="386" Canvas.Top="217" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <CheckBox x:Name="checkbox_outras" Content="Outras" Canvas.Left="386" Canvas.Top="237" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_laudo_medico" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="459" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="label_laudo_medico" Content="Laudo Médico:" Canvas.Left="34" Canvas.Top="420" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.513,0.656"/>
+            <TextBox x:Name="title_cadastrar_matricula" TextWrapping="Wrap" Text="Cadastrar Matrícula" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Width="390" HorizontalAlignment="Left" Height="55" Canvas.Left="-34" Canvas.Top="-57"/>
+            <Button x:Name="button_salvar_matricula" Content="Salvar" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" Width="124" HorizontalAlignment="Left" Canvas.Left="560" Canvas.Top="530" VerticalAlignment="Bottom"/>
         </Canvas>
-        <TextBox x:Name="title_cadastrar_matricula" HorizontalAlignment="Left" Margin="33,10,0,0" TextWrapping="Wrap" Text="Cadastrar Matrícula" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50"/>
 
     </Grid>
 </UserControl>
