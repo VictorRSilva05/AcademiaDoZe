@@ -56,5 +56,12 @@ namespace AcademiaDoZe_WPF
             
             ContentControl_main.Content = cadastrarMatriculaControl;
         }
+
+        private void button_avaliacao_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarAvaliacaoControl cadastrarAvaliacaoControl = new CadastrarAvaliacaoControl();
+
+            ContentControl_main.Content = cadastrarAvaliacaoControl;
+        }
     }
 }
