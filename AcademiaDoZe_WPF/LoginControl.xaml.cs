@@ -10,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AcademiaDoZe_WPF
 {
     /// <summary>
-    /// Interaction logic for CadastrarFrequenciaWindow.xaml
+    /// Interaction logic for LoginControl.xaml
     /// </summary>
-    public partial class CadastrarFrequenciaWindow : Window
+    public partial class LoginControl : UserControl
     {
-        public CadastrarFrequenciaWindow()
+        public LoginControl()
         {
             InitializeComponent();
         }
-
-      
     }
 }

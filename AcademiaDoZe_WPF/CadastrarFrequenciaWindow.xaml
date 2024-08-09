@@ -19,7 +19,7 @@
             <Label x:Name="label_saida_frequencia" Content="Saída:" Canvas.Left="29" Canvas.Top="193" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <DatePicker Canvas.Left="24" Canvas.Top="224"/>
         </Canvas>
-        <TextBox x:Name="title_cadastrar_frequencia" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Cadastrar Frequência" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50" TextChanged="title_cadastrar_senha_TextChanged"/>
+        <TextBox x:Name="title_cadastrar_frequencia" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Cadastrar Frequência" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50"/>
         <Button x:Name="button_salvar_frequencia" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,372,0,0"/>
 
     </Grid>

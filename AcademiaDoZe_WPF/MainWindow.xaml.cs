@@ -70,5 +70,12 @@ namespace AcademiaDoZe_WPF
 
             cadastrarFrequenciaWindow.Show();
         }
+
+        private void button_login_logoff_Click(object sender, RoutedEventArgs e)
+        {
+            LoginControl loginControl = new LoginControl();
+
+            ContentControl_main.Content = loginControl;
+        }
     }
 }
