@@ -63,5 +63,12 @@ namespace AcademiaDoZe_WPF
 
             ContentControl_main.Content = cadastrarAvaliacaoControl;
         }
+
+        private void button_frequencia_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarFrequenciaWindow cadastrarFrequenciaWindow = new CadastrarFrequenciaWindow();
+
+            cadastrarFrequenciaWindow.Show();
+        }
     }
 }
