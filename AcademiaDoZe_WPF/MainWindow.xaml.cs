@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Globalization;
 
 namespace AcademiaDoZe_WPF
 {
@@ -21,7 +23,20 @@ namespace AcademiaDoZe_WPF
             InitializeComponent();
         }
 
-
+        private void ChangeLanguage(string cultureCode)
+        {
+            // en-US, es-ES, pt-BR
+            // Definir a cultura
+            CultureInfo culture = new CultureInfo(cultureCode);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+            // Recargar a interface do usuário para refletir as mudanças
+            var oldWindow = this;
+            var newWindow = new MainWindow();
+            Application.Current.MainWindow = newWindow;
+            newWindow.Show();
+            oldWindow.Close();
+        }
         private void button_logradouro_Click(object sender, RoutedEventArgs e)
         {
             CadastroLogradouroControl cadastroLogradouroControl = new CadastroLogradouroControl();
@@ -53,7 +68,7 @@ namespace AcademiaDoZe_WPF
         private void button_matricula_Click(object sender, RoutedEventArgs e)
         {
             CadastrarMatriculaControl cadastrarMatriculaControl = new CadastrarMatriculaControl();
-            
+
             ContentControl_main.Content = cadastrarMatriculaControl;
         }
 
@@ -76,6 +91,21 @@ namespace AcademiaDoZe_WPF
             LoginControl loginControl = new LoginControl();
 
             ContentControl_main.Content = loginControl;
+        }
+
+        private void button_espanhol_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeLanguage("es-ES");
+        }
+
+        private void button_ingles_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeLanguage("en-US");
+        }
+
+        private void button_portugues_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeLanguage("pt-BR");
         }
     }
 }
