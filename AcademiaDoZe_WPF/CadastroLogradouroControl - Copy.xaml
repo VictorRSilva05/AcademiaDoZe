@@ -8,7 +8,6 @@
              mc:Ignorable="d" Height="398" Width="677">
     <Grid Background="#FFEAE8E8" RenderTransformOrigin="0.5,0.5" Height="398" VerticalAlignment="Center" Margin="-2,0,0,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="47*"/>
             <RowDefinition Height="351*"/>
         </Grid.RowDefinitions>
         <Grid.RenderTransform>
@@ -19,8 +18,7 @@
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
-        <TextBox x:Name="title_cadastrar_logradouro" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Cadastrar Logradouro" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Grid.RowSpan="2"/>
-        <Canvas Margin="34,22,48,0" Background="#FFFAFAFA" RenderTransformOrigin="0.5,0.5" Height="223" VerticalAlignment="Top" Grid.Row="1">
+        <Canvas Margin="38,72,44,0" Background="#FFFAFAFA" RenderTransformOrigin="0.5,0.5" Height="223" VerticalAlignment="Top">
             <Canvas.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -44,7 +42,8 @@
             <ComboBox x:Name="combobox_uf" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
             <Label x:Name="labelUf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
-        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="511,271,0,0" Grid.Row="1"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,313,0,0"/>
+        <Label x:Name="labelCadastrarLogradouro" Content="Cadastrar Logradouro" HorizontalAlignment="Left" Margin="43,8,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="36"/>
 
     </Grid>
 </UserControl>

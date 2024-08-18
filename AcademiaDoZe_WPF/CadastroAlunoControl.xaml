@@ -10,7 +10,6 @@
             <RowDefinition Height="41*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="title_cadastrar_aluno" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Cadastrar Aluno" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50"/>
         <Canvas Margin="32,66,51,82" Background="#FFFAFAFA">
             <Label x:Name="labelId" Content="ID" Canvas.Left="54" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603"/>
             <TextBox x:Name="textbox_id_aluno" Canvas.Left="54" TextWrapping="Wrap" Canvas.Top="56" Width="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -54,6 +53,7 @@
             <TextBox x:Name="textbox_complemento_aluno" Canvas.Left="176" TextWrapping="Wrap" Canvas.Top="475" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
         <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="492,623,0,0"/>
+        <Label x:Name="labelCadastrarAluno" Content="Cadastrar Aluno" HorizontalAlignment="Left" Margin="35,3,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="36"/>
 
     </Grid>
 </UserControl>

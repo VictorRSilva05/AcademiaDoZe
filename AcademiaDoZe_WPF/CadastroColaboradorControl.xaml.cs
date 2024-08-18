@@ -10,6 +10,12 @@ namespace AcademiaDoZe_WPF
         public CadastroColaboradorControl()
         {
             InitializeComponent();
+            this.Loaded += CadastroColaboradorControl_Loaded;
+        }
+
+        private void CadastroColaboradorControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
         }
     }
 }

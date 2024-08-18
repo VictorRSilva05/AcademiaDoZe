@@ -189,4 +189,31 @@
   <data name="labelNascimento.Content" xml:space="preserve">
     <value>Date of birth</value>
   </data>
+  <data name="labelCadastrarAluno.Content" xml:space="preserve">
+    <value>Register Student</value>
+  </data>
+  <data name="labelCadastrarLogradouro.Content" xml:space="preserve">
+    <value>Register Public Place</value>
+  </data>
+  <data name="labelCadastrarColaborador.Content" xml:space="preserve">
+    <value>Register Collaborator</value>
+  </data>
+  <data name="labelAdmissao.Content" xml:space="preserve">
+    <value>Admission</value>
+  </data>
+  <data name="radioButtonClt.Content" xml:space="preserve">
+    <value>Employed</value>
+  </data>
+  <data name="radioButtonEstagio.Content" xml:space="preserve">
+    <value>Internship</value>
+  </data>
+  <data name="radioButtonAdministrador" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="radioButtonAtendente" xml:space="preserve">
+    <value>Attendant</value>
+  </data>
+  <data name="radioButtonInstrutor" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
 </root>
