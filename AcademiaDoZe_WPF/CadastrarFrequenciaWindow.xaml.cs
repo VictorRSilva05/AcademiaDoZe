@@ -10,8 +10,12 @@ namespace AcademiaDoZe_WPF
         public CadastrarFrequenciaWindow()
         {
             InitializeComponent();
+            this.Loaded += CadastrarFrequenciaWindow_Loaded;
         }
 
-
+        private void CadastrarFrequenciaWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
+        }
     }
 }

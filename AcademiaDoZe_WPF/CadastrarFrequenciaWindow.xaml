@@ -11,16 +11,16 @@
             <TextBox x:Name="textbox_id_frequencia" Canvas.Left="24" TextWrapping="Wrap" Canvas.Top="63" Width="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_id_aluno_frequencia" Canvas.Left="133" TextWrapping="Wrap" Canvas.Top="63" Width="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_cpf_aluno_frequencia" Canvas.Left="243" TextWrapping="Wrap" Canvas.Top="63" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_id_frequencia" Content="ID:" Canvas.Left="29" Canvas.Top="32" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <Label x:Name="label_id_aluno_frequencia" Content="ID Aluno:" Canvas.Left="133" Canvas.Top="32" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <Label x:Name="label_cpf_aluno_avaliacao" Content="CPF Aluno:" Canvas.Left="243" Canvas.Top="32" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <Label x:Name="label_entrada_frequencia" Content="Entrada:" Canvas.Left="29" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelId" Content="ID:" Canvas.Left="29" Canvas.Top="32" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelIdAluno" Content="ID Aluno:" Canvas.Left="133" Canvas.Top="32" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelCpfAluno" Content="CPF Aluno:" Canvas.Left="243" Canvas.Top="32" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelEntrada" Content="Entrada:" Canvas.Left="29" Canvas.Top="114" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <DatePicker x:Name="datepicker_entrada_frequencia" Canvas.Left="24" Canvas.Top="145"/>
-            <Label x:Name="label_saida_frequencia" Content="Saída:" Canvas.Left="29" Canvas.Top="193" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelSaida" Content="Saída:" Canvas.Left="29" Canvas.Top="193" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <DatePicker Canvas.Left="24" Canvas.Top="224"/>
         </Canvas>
-        <TextBox x:Name="title_cadastrar_frequencia" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Cadastrar Frequência" VerticalAlignment="Top" Width="390" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50"/>
-        <Button x:Name="button_salvar_frequencia" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,372,0,0"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,372,0,0"/>
+        <Label x:Name="labelCadastrarFrequencia" Content="Cadastrar Frequência" HorizontalAlignment="Left" Margin="24,18,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="36"/>
 
     </Grid>
 </Window>

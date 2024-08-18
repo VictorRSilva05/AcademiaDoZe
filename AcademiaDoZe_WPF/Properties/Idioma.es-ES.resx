@@ -291,10 +291,22 @@
   <data name="checkboxRemediosUsoContinuo.Content" xml:space="preserve">
     <value>Medicamentos uso continuo</value>
   </data>
-  <data name="checkboxOutra.Content" xml:space="preserve">
+  <data name="checkboxOutras.Content" xml:space="preserve">
     <value>Otros</value>
   </data>
-  <data name="labelCadastrarMatricula" xml:space="preserve">
+  <data name="labelCadastrarMatricula.Content" xml:space="preserve">
     <value>Registrarse Inscripción</value>
+  </data>
+  <data name="labelEntrada.Content" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="labelSaida.Content" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="labelCadastrarFrequencia.Content" xml:space="preserve">
+    <value>Frecuencia de registro</value>
+  </data>
+  <data name="labelPlano.Content" xml:space="preserve">
+    <value>Plan</value>
   </data>
 </root>

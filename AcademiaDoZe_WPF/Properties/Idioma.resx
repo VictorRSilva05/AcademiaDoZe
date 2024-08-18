@@ -294,7 +294,19 @@
   <data name="checkboxOutras.Content" xml:space="preserve">
     <value>Outras</value>
   </data>
-  <data name="labelCadastrarMatricula" xml:space="preserve">
+  <data name="labelCadastrarMatricula.Content" xml:space="preserve">
     <value>Cadastrar Matrícula</value>
+  </data>
+  <data name="labelEntrada.Content" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="labelSaida.Content" xml:space="preserve">
+    <value>Saída</value>
+  </data>
+  <data name="labelCadastrarFrequencia.Content" xml:space="preserve">
+    <value>Cadastrar Frequência</value>
+  </data>
+  <data name="labelPlano.Content" xml:space="preserve">
+    <value>Plano</value>
   </data>
 </root>
