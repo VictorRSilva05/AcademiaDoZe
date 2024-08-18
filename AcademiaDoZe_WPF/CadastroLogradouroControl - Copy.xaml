@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademiaDoZe_WPF"
+             xmlns:resources="clr-namespace:AcademiaDoZe_WPF.Properties"
              mc:Ignorable="d" Height="398" Width="677">
     <Grid Background="#FFEAE8E8" RenderTransformOrigin="0.5,0.5" Height="398" VerticalAlignment="Center" Margin="-2,0,0,0">
         <Grid.RowDefinitions>
@@ -28,20 +29,20 @@
                     <TranslateTransform Y="0.038"/>
                 </TransformGroup>
             </Canvas.RenderTransform>
-            <Label x:Name="label_id" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="labelId" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_id" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_cep" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_logradouro" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="label_cep" Content="CEP" Canvas.Left="155" Canvas.Top="21" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-            <Label x:Name="label_logradouro" Content="Logradouro:" Canvas.Left="297" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
-            <Label x:Name="label_bairro" Content="Bairro:" Canvas.Left="57" Canvas.Top="84" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
+            <Label x:Name="labelCep" Content="CEP" Canvas.Left="155" Canvas.Top="21" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
+            <Label x:Name="labelLogradouro" Content="Logradouro" Canvas.Left="297" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
+            <Label x:Name="labelBairro" Content="Bairro" Canvas.Left="57" Canvas.Top="84" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <TextBox x:Name="textbox_bairro" Canvas.Left="55" TextWrapping="Wrap" Canvas.Top="113" Width="222" HorizontalAlignment="Left" VerticalAlignment="Top" />
             <TextBox x:Name="textbox_cidade" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="114" Width="274" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_cidade" Content="Cidade:" Canvas.Left="293" Canvas.Top="82" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.37"/>
+            <Label x:Name="labelCidade" Content="Cidade" Canvas.Left="293" Canvas.Top="82" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.37"/>
             <TextBox x:Name="textbox_pais" TextWrapping="Wrap" Width="391" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="180" VerticalAlignment="Top"/>
-            <Label x:Name="label_cidade_Copy" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="labelPais" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <ComboBox x:Name="combobox_uf" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
-            <Label x:Name="label_uf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelUf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
         <Button x:Name="button_salvar_logradouro" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="511,271,0,0" Grid.Row="1"/>
 

@@ -61,6 +61,60 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bairro.
+        /// </summary>
+        public static string labelBairro_Content {
+            get {
+                return ResourceManager.GetString("labelBairro.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CEP.
+        /// </summary>
+        public static string LabelCep_Content {
+            get {
+                return ResourceManager.GetString("LabelCep.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cidade.
+        /// </summary>
+        public static string labelCidade_Content {
+            get {
+                return ResourceManager.GetString("labelCidade.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logradouro.
+        /// </summary>
+        public static string labelLogradouro_Content {
+            get {
+                return ResourceManager.GetString("labelLogradouro.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to País.
+        /// </summary>
+        public static string labelPais_Content {
+            get {
+                return ResourceManager.GetString("labelPais.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UF.
+        /// </summary>
+        public static string LabelUf_Content {
+            get {
+                return ResourceManager.GetString("LabelUf.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Aluno.
         /// </summary>
         public static string txtAluno {

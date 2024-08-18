@@ -150,4 +150,22 @@
   <data name="txtTreinos" xml:space="preserve">
     <value>Treinos</value>
   </data>
+  <data name="LabelCep.Content" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="labelLogradouro.Content" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="labelBairro.Content" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="labelCidade.Content" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="LabelUf.Content" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="labelPais.Content" xml:space="preserve">
+    <value>País</value>
+  </data>
 </root>
