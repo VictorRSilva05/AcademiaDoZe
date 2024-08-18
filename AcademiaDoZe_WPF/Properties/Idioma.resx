@@ -150,7 +150,7 @@
   <data name="txtTreinos" xml:space="preserve">
     <value>Treinos</value>
   </data>
-  <data name="LabelCep.Content" xml:space="preserve">
+  <data name="labelCep.Content" xml:space="preserve">
     <value>CEP</value>
   </data>
   <data name="labelLogradouro.Content" xml:space="preserve">
@@ -162,10 +162,31 @@
   <data name="labelCidade.Content" xml:space="preserve">
     <value>Cidade</value>
   </data>
-  <data name="LabelUf.Content" xml:space="preserve">
+  <data name="labelUf.Content" xml:space="preserve">
     <value>UF</value>
   </data>
   <data name="labelPais.Content" xml:space="preserve">
     <value>País</value>
+  </data>
+  <data name="labelCpf.Content" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="labelTelefone.Content" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="labelNome.Content" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="labelNumero.Content" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="labelComplemento.Content" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="buttonSalvar.Content" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="labelNascimento.Content" xml:space="preserve">
+    <value>Nascimento</value>
   </data>
 </root>
