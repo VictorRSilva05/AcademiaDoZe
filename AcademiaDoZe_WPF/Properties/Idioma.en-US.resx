@@ -309,4 +309,70 @@
   <data name="labelPlano.Content" xml:space="preserve">
     <value>Plano</value>
   </data>
+  <data name="labelData.Content" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="labelPeso.Content" xml:space="preserve">
+    <value>Weight (Kg)</value>
+  </data>
+  <data name="labelAltura.Content" xml:space="preserve">
+    <value>Height (cm)</value>
+  </data>
+  <data name="labelMassaGorda.Content" xml:space="preserve">
+    <value>Fat Mass</value>
+  </data>
+  <data name="labelMassaMagra.Content" xml:space="preserve">
+    <value>Lean Mass</value>
+  </data>
+  <data name="labelImc.Content" xml:space="preserve">
+    <value>BMI</value>
+  </data>
+  <data name="labelObservacao.Content" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="labelTorax.Content" xml:space="preserve">
+    <value>Chest</value>
+  </data>
+  <data name="labelCintura.Content" xml:space="preserve">
+    <value>Waist</value>
+  </data>
+  <data name="labelQuadril.Content" xml:space="preserve">
+    <value>Hip</value>
+  </data>
+  <data name="labelPesoIdeal.Content" xml:space="preserve">
+    <value>Ideal Weight</value>
+  </data>
+  <data name="labelPercentualGordura.Content" xml:space="preserve">
+    <value>Fat Percentage</value>
+  </data>
+  <data name="labelAntebracoDir.Content" xml:space="preserve">
+    <value>Right Forearm</value>
+  </data>
+  <data name="labelAntebracoEsq.Content" xml:space="preserve">
+    <value>Left Forearm</value>
+  </data>
+  <data name="labelBicepsDir.Content" xml:space="preserve">
+    <value>Right Biceps</value>
+  </data>
+  <data name="labelBicepsEsq.Content" xml:space="preserve">
+    <value>Left Biceps</value>
+  </data>
+  <data name="labelCoxaDir.Content" xml:space="preserve">
+    <value>Right Thigh</value>
+  </data>
+  <data name="labelCoxaEsq.Content" xml:space="preserve">
+    <value>Left Thigh</value>
+  </data>
+  <data name="labelPanturrilhaDir.Content" xml:space="preserve">
+    <value>Right Calf</value>
+  </data>
+  <data name="labelPanturrilhaEsq.Content" xml:space="preserve">
+    <value>Left Calf</value>
+  </data>
+  <data name="labelCadastrarAvaliacao.Content" xml:space="preserve">
+    <value>Register Assessment</value>
+  </data>
+  <data name="txtAcademiaZe" xml:space="preserve">
+    <value>Zé's Gym</value>
+  </data>
 </root>

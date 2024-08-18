@@ -10,6 +10,12 @@ namespace AcademiaDoZe_WPF
         public CadastrarAvaliacaoControl()
         {
             InitializeComponent();
+            this.Loaded += CadastrarAvaliacaoControl_Loaded;
+        }
+
+        private void CadastrarAvaliacaoControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
         }
 
         private void textbox_antebraco_esq_TextChanged(object sender, TextChangedEventArgs e)

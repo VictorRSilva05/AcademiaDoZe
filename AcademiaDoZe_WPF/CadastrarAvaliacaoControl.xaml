@@ -7,56 +7,56 @@
              mc:Ignorable="d" Height="636" Width="1085">
     <Grid Background="#FFEAE8E8">
         <Canvas Margin="52,0,55,74" Background="White" Height="488" VerticalAlignment="Bottom">
-            <Label x:Name="label_id_avaliacao" Content="ID:" Canvas.Left="38" Canvas.Top="27" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF
+            <Label x:Name="labelId" Content="ID:" Canvas.Left="38" Canvas.Top="27" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF
                    " FontWeight="Bold"/>
             <TextBox x:Name="textbox_id_avalicao" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="53" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.542,7.012"/>
-            <Label x:Name="label_id_aluno_avaliacao" Content="ID Aluno:" Canvas.Left="148" Canvas.Top="27" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelIdAluno" Content="ID Aluno:" Canvas.Left="148" Canvas.Top="27" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_id_aluno_avalicao" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="53" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_id_cpf_avaliacao" Content="Nome Aluno:" Canvas.Left="252" Canvas.Top="27" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelNomeAluno" Content="Nome Aluno:" Canvas.Left="252" Canvas.Top="27" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_nome_aluno_avaliacao" Canvas.Left="252" TextWrapping="Wrap" Canvas.Top="53" Width="197" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="datepicker_data_avaliacao" Content="Data:" Canvas.Left="38" Canvas.Top="91" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="labelData" Content="Data:" Canvas.Left="38" Canvas.Top="91" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <DatePicker Canvas.Left="38" Canvas.Top="122"/>
-            <Label x:Name="label_peso" Content="Peso (Kg):" Canvas.Left="38" Canvas.Top="172" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="labelPeso" Content="Peso (Kg):" Canvas.Left="38" Canvas.Top="172" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_peso" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="203" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_altura" Content="Altura (cm):" Canvas.Left="148" Canvas.Top="172" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelAltura" Content="Altura (cm):" Canvas.Left="148" Canvas.Top="172" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_altura" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="203" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF "/>
-            <Label x:Name="label_torax" Content="Tórax:" Canvas.Left="38" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="labelTorax" Content="Tórax:" Canvas.Left="38" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_torax" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="273" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_cintura" Content="Cintura:" Canvas.Left="148" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelCintura" Content="Cintura:" Canvas.Left="148" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_cintura" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="273" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_quadril" Content="Quadril:" Canvas.Left="252" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelQuadril" Content="Quadril:" Canvas.Left="252" Canvas.Top="242" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_quadril" Canvas.Left="252" TextWrapping="Wrap" Canvas.Top="273" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_antebraco_dir" Content="Antebraço Dir:" Canvas.Left="38" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.116,3.535"/>
+            <Label x:Name="labelAntebracoDir" Content="Antebraço Dir:" Canvas.Left="38" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.116,3.535"/>
             <TextBox x:Name="textbox_antebraco_dir" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="338" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_antebraco_esq" Content="Antebraço Esq:" Canvas.Left="148" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" RenderTransformOrigin="-1.116,3.535" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelAntebracoEsq" Content="Antebraço Esq:" Canvas.Left="148" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" RenderTransformOrigin="-1.116,3.535" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_antebraco_esq" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="338" Width="81" RenderTransformOrigin="0.542,7.012" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="textbox_antebraco_esq_TextChanged"/>
-            <Label x:Name="label_biceps_dir" Content="Bíceps Dir:" Canvas.Left="252" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" RenderTransformOrigin="-1.116,3.535" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="labelBicepsDir" Content="Bíceps Dir:" Canvas.Left="252" Canvas.Top="307" FontFamily="MiSans Latin VF                    " FontWeight="Bold" RenderTransformOrigin="-1.116,3.535" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox Width="81" Canvas.Top="273" TextWrapping="Wrap" RenderTransformOrigin="0.542,7.012" x:Name="textbox_peso_ideal" Canvas.Left="368" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox Width="81" Canvas.Top="198" TextWrapping="Wrap" RenderTransformOrigin="0.542,7.012" x:Name="textbox_imc" Canvas.Left="617" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_observacoes_avaliacao" Canvas.Left="745" TextWrapping="Wrap" Canvas.Top="134" Width="202" Height="311" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Canvas.Top="237" x:Name="label_percentual_gordura" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Percentual Gordura:" HorizontalAlignment="Center" Canvas.Left="489" VerticalAlignment="Center"/>
-            <Label Canvas.Top="167" x:Name="label_massa_gorda" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Massa Gorda:" HorizontalAlignment="Left" Canvas.Left="368" VerticalAlignment="Top"/>
-            <Label Canvas.Top="167" x:Name="label_massa_magra" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Massa Magra:" HorizontalAlignment="Left" Canvas.Left="489" VerticalAlignment="Top"/>
-            <Label Canvas.Top="307" RenderTransformOrigin="-1.116,3.535" x:Name="label_biceps_esq" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Bíceps Esq:" HorizontalAlignment="Left" Canvas.Left="368" VerticalAlignment="Top"/>
-            <Label Canvas.Top="167" x:Name="label_imc" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="IMC:" HorizontalAlignment="Left" Canvas.Left="617" VerticalAlignment="Top" RenderTransformOrigin="1.876,-0.154"/>
-            <Label x:Name="label_peso_ideal" Content="Peso Ideal:" Canvas.Left="368" Canvas.Top="237" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label Canvas.Top="237" x:Name="labelPercentualGordura" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Percentual Gordura:" HorizontalAlignment="Center" Canvas.Left="489" VerticalAlignment="Center"/>
+            <Label Canvas.Top="167" x:Name="labelMassaGorda" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Massa Gorda:" HorizontalAlignment="Left" Canvas.Left="368" VerticalAlignment="Top"/>
+            <Label Canvas.Top="167" x:Name="labelMassaMagra" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Massa Magra:" HorizontalAlignment="Left" Canvas.Left="489" VerticalAlignment="Top"/>
+            <Label Canvas.Top="307" RenderTransformOrigin="-1.116,3.535" x:Name="labelBicepsEsq" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="Bíceps Esq:" HorizontalAlignment="Left" Canvas.Left="368" VerticalAlignment="Top"/>
+            <Label Canvas.Top="167" x:Name="labelImc" FontWeight="Bold" FontFamily="MiSans Latin VF                    " Content="IMC:" HorizontalAlignment="Left" Canvas.Left="617" VerticalAlignment="Top" RenderTransformOrigin="1.876,-0.154"/>
+            <Label x:Name="labelPesoIdeal" Content="Peso Ideal:" Canvas.Left="368" Canvas.Top="237" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <TextBox x:Name="textbox_massa_gorda" Canvas.Left="368" TextWrapping="Wrap" Canvas.Top="198" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_massa_magra" Canvas.Left="489" TextWrapping="Wrap" Canvas.Top="198" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_observacao" Content="Observação:" Canvas.Left="745" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="MiSans Latin VF"/>
+            <Label x:Name="labelObservacao" Content="Observação:" Canvas.Left="745" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="MiSans Latin VF"/>
             <TextBox x:Name="textbox_percentual_gordura" Canvas.Left="489" TextWrapping="Wrap" Canvas.Top="273" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_biceps_dir" Canvas.Left="252" TextWrapping="Wrap" Canvas.Top="338" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_biceps_esq" Canvas.Left="368" TextWrapping="Wrap" Canvas.Top="338" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_coxa_dir" Content="Coxa Dir:" Canvas.Left="38" Canvas.Top="381" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
+            <Label x:Name="labelCoxaDir" Content="Coxa Dir:" Canvas.Left="38" Canvas.Top="381" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
             <TextBox x:Name="textbox_coxa_dir" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="412" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_coxa_esq" Content="Coxa Esq:" Canvas.Left="148" Canvas.Top="381" RenderTransformOrigin="-1.246,-0.116" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelCoxaEsq" Content="Coxa Esq:" Canvas.Left="148" Canvas.Top="381" RenderTransformOrigin="-1.246,-0.116" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <TextBox x:Name="textbox_coxa_esq" Canvas.Left="148" TextWrapping="Wrap" Canvas.Top="412" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_panturrilha_dir" Content="Panturrilha Dir:" Canvas.Left="252" Canvas.Top="381" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
+            <Label x:Name="labelPanturrilhaDir" Content="Panturrilha Dir:" Canvas.Left="252" Canvas.Top="381" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
             <TextBox x:Name="textbox_panturrilha_dir" Canvas.Left="252" TextWrapping="Wrap" Canvas.Top="412" Width="81" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_panturrilha_esq" Canvas.Left="368" TextWrapping="Wrap" Canvas.Top="412" Width="84" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label_panturrilha_esq" Content="Panturrilha Esq:" Canvas.Left="368" Canvas.Top="381" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelPanturrilhaEsq" Content="Panturrilha Esq:" Canvas.Left="368" Canvas.Top="381" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
         </Canvas>
-        <TextBox x:Name="title_cadastrar_avaliacao" TextWrapping="Wrap" Text="Cadastrar Avaliação" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Margin="23,20,672,451"/>
-        <Button x:Name="button_salvar_avaliacao" Content="Salvar" FontFamily="MiSans Latin VF " FontWeight="Bold" Margin="906,584,55,0" Height="42" VerticalAlignment="Top"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" FontFamily="MiSans Latin VF " FontWeight="Bold" Margin="906,584,55,0" Height="42" VerticalAlignment="Top"/>
+        <Label x:Name="labelCadastrarAvaliacao" Content="Cadastrar Avaliação" HorizontalAlignment="Left" Margin="52,11,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" FontFamily="MiSans Latin VF "/>
 
     </Grid>
 </UserControl>
