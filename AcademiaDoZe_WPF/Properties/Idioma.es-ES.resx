@@ -207,13 +207,22 @@
   <data name="radioButtonEstagio.Content" xml:space="preserve">
     <value>Pasantia</value>
   </data>
-  <data name="radioButtonAdministrador" xml:space="preserve">
+  <data name="radioButtonAdministrador.Content" xml:space="preserve">
     <value>Administrador</value>
   </data>
-  <data name="radioButtonAtendente" xml:space="preserve">
+  <data name="radioButtonAtendente.Content" xml:space="preserve">
     <value>Asistente</value>
   </data>
-  <data name="radioButtonInstrutor" xml:space="preserve">
+  <data name="radioButtonInstrutor.Content" xml:space="preserve">
     <value>Instructor</value>
+  </data>
+  <data name="labelCadastrarSenha.Content" xml:space="preserve">
+    <value>Registrarse Contraseña</value>
+  </data>
+  <data name="labelSenha.Content" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="labelReSenha" xml:space="preserve">
+    <value>Volver a contraseña</value>
   </data>
 </root>

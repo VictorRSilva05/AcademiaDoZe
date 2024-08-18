@@ -216,4 +216,13 @@
   <data name="radioButtonInstrutor.Content" xml:space="preserve">
     <value>Instrutor</value>
   </data>
+  <data name="labelCadastrarSenha.Content" xml:space="preserve">
+    <value>Cadastrar Senha</value>
+  </data>
+  <data name="labelSenha.Content" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="labelReSenha.Content" xml:space="preserve">
+    <value>Re-Senha</value>
+  </data>
 </root>

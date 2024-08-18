@@ -10,6 +10,12 @@ namespace AcademiaDoZe_WPF
         public CadastrarSenhaWindow()
         {
             InitializeComponent();
+            this.Loaded += CadastrarSenhaWindow_Loaded;
+        }
+
+        private void CadastrarSenhaWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
         }
     }
 }
