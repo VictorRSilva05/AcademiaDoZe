@@ -7,13 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" Width="330">
     <Grid Margin="0,0,3,0" Background="#FFEAE8E8">
-        <TextBox x:Name="title_login" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="307" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontFamily="MiSans Latin VF" Height="50" />
         <Canvas Margin="39,82,39,0" Background="White" Height="242" VerticalAlignment="Top">
             <TextBox x:Name="textbox_cpf_login" Canvas.Left="50" TextWrapping="Wrap" Canvas.Top="81" Width="149" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_senha_login" Canvas.Left="50" TextWrapping="Wrap" Canvas.Top="168" Width="149" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label_cpf_login" Content="CPF:" Canvas.Left="50" Canvas.Top="41" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <Label x:Name="label_senha_login" Content="Senha:" Canvas.Left="50" Canvas.Top="121" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
+            <Label x:Name="labelCpf" Content="CPF:" Canvas.Left="50" Canvas.Top="41" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+            <Label x:Name="labelSenha" Content="Senha:" Canvas.Left="50" Canvas.Top="121" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
         </Canvas>
-        <Button x:Name="button_salvar_frequencia" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,362,0,0"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,362,0,0"/>
+        <Label x:Name="labelLogin" Content="Login" Margin="39,19,163,0" VerticalAlignment="Top" FontSize="36" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
     </Grid>
 </UserControl>

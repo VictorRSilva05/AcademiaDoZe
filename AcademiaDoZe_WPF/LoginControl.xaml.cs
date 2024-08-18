@@ -10,6 +10,12 @@ namespace AcademiaDoZe_WPF
         public LoginControl()
         {
             InitializeComponent();
+            this.Loaded += LoginControl_Loaded;
+        }
+
+        private void LoginControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
         }
     }
 }
