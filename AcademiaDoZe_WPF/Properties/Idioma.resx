@@ -225,4 +225,76 @@
   <data name="labelReSenha.Content" xml:space="preserve">
     <value>Re-Senha</value>
   </data>
+  <data name="labelIdAluno.Content" xml:space="preserve">
+    <value>ID Aluno</value>
+  </data>
+  <data name="labelCpfAluno.Content" xml:space="preserve">
+    <value>CPF Aluno</value>
+  </data>
+  <data name="labelNomeAluno.Content" xml:space="preserve">
+    <value>Nome aluno</value>
+  </data>
+  <data name="labelSelecionarPlano.Content" xml:space="preserve">
+    <value>Selecionar plano</value>
+  </data>
+  <data name="radioButtonMensal.Content" xml:space="preserve">
+    <value>Mensal</value>
+  </data>
+  <data name="radioButtonSemestral.Content" xml:space="preserve">
+    <value>Semestral</value>
+  </data>
+  <data name="radioButtonAnual.Content" xml:space="preserve">
+    <value>Anual</value>
+  </data>
+  <data name="labelInicio.Content" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="labelFim.Content" xml:space="preserve">
+    <value>Fim</value>
+  </data>
+  <data name="labelObjetivo.Content" xml:space="preserve">
+    <value>Objetivo</value>
+  </data>
+  <data name="labelObservacaoRestricao.Content" xml:space="preserve">
+    <value>Observação Restrição</value>
+  </data>
+  <data name="labelLaudoMedico.Content" xml:space="preserve">
+    <value>Laudo Médico</value>
+  </data>
+  <data name="labelRestricoes.Content" xml:space="preserve">
+    <value>Restrições</value>
+  </data>
+  <data name="checkboxNenhuma.Content" xml:space="preserve">
+    <value>Nenhuma</value>
+  </data>
+  <data name="checkboxProblemasRespiratorios.Content" xml:space="preserve">
+    <value>Problemas respiratórios</value>
+  </data>
+  <data name="checkboxLesoesMusculares.Content" xml:space="preserve">
+    <value>Lesões musculares</value>
+  </data>
+  <data name="checkboxPressaoAlta.Content" xml:space="preserve">
+    <value>Pressão alta</value>
+  </data>
+  <data name="checkboxDiabetes.Content " xml:space="preserve">
+    <value>Diabetes</value>
+  </data>
+  <data name="checkboxGravidez.Content" xml:space="preserve">
+    <value>Gravidez</value>
+  </data>
+  <data name="checkboxLabirinto.Content" xml:space="preserve">
+    <value>Labirinto</value>
+  </data>
+  <data name="checkboxAlergias.Content" xml:space="preserve">
+    <value>Alergias</value>
+  </data>
+  <data name="checkboxRemediosUsoContinuo.Content" xml:space="preserve">
+    <value>Remédios uso contínuo</value>
+  </data>
+  <data name="checkboxOutras.Content" xml:space="preserve">
+    <value>Outras</value>
+  </data>
+  <data name="labelCadastrarMatricula" xml:space="preserve">
+    <value>Cadastrar Matrícula</value>
+  </data>
 </root>

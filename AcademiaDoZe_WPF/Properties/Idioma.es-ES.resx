@@ -222,7 +222,79 @@
   <data name="labelSenha.Content" xml:space="preserve">
     <value>Contraseña</value>
   </data>
-  <data name="labelReSenha" xml:space="preserve">
+  <data name="labelReSenha.Content" xml:space="preserve">
     <value>Volver a contraseña</value>
+  </data>
+  <data name="labelIdAluno.Content" xml:space="preserve">
+    <value>Identificación de estudiante</value>
+  </data>
+  <data name="labelCpfAluno.Content" xml:space="preserve">
+    <value>CPF del Estudiante</value>
+  </data>
+  <data name="labelNomeAluno.Content" xml:space="preserve">
+    <value>Nombre del estudiante</value>
+  </data>
+  <data name="labelSelecionarPlano.Content" xml:space="preserve">
+    <value>Seleccionar plan</value>
+  </data>
+  <data name="radioButtonMensal.Content" xml:space="preserve">
+    <value>Mensual</value>
+  </data>
+  <data name="radioButtonSemestral.Content" xml:space="preserve">
+    <value>Semestral</value>
+  </data>
+  <data name="radioButtonAnual.Content" xml:space="preserve">
+    <value>Anual</value>
+  </data>
+  <data name="labelInicio.Content" xml:space="preserve">
+    <value>Comenzar</value>
+  </data>
+  <data name="labelFim.Content" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="labelObjetivo.Content" xml:space="preserve">
+    <value>Objetivo</value>
+  </data>
+  <data name="labelObservacaoRestricao.Content" xml:space="preserve">
+    <value>Restricción</value>
+  </data>
+  <data name="labelLaudoMedico.Content" xml:space="preserve">
+    <value>Informe Medico</value>
+  </data>
+  <data name="labelRestricoes.Content" xml:space="preserve">
+    <value>Restricciones</value>
+  </data>
+  <data name="checkboxNenhuma.Content" xml:space="preserve">
+    <value>Ningun</value>
+  </data>
+  <data name="checkboxProblemasRespiratorios.Content" xml:space="preserve">
+    <value>Problemas respiratorios</value>
+  </data>
+  <data name="checkboxLesoesMusculares.Content" xml:space="preserve">
+    <value>Lesiones musculares</value>
+  </data>
+  <data name="checkboxPressaoAlta.Content" xml:space="preserve">
+    <value>Hipertensión</value>
+  </data>
+  <data name="checkboxDiabetes.Content " xml:space="preserve">
+    <value>Diabetes</value>
+  </data>
+  <data name="checkboxGravidez.Content" xml:space="preserve">
+    <value>Embarazo</value>
+  </data>
+  <data name="checkboxLabirinto.Content" xml:space="preserve">
+    <value>Laberinto</value>
+  </data>
+  <data name="checkboxAlergias.Content" xml:space="preserve">
+    <value>Alergias</value>
+  </data>
+  <data name="checkboxRemediosUsoContinuo.Content" xml:space="preserve">
+    <value>Medicamentos uso continuo</value>
+  </data>
+  <data name="checkboxOutra.Content" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="labelCadastrarMatricula" xml:space="preserve">
+    <value>Registrarse Inscripción</value>
   </data>
 </root>
