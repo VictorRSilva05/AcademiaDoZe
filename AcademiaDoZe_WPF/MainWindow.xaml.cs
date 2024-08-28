@@ -83,19 +83,16 @@ namespace AcademiaDoZe_WPF
             ContentControl_main.Content = loginControl;
         }
 
-        private void button_espanhol_Click(object sender, RoutedEventArgs e)
+        private void buttonConfig_Click(object sender, RoutedEventArgs e)
         {
-            ChangeLanguage("es-ES");
-        }
-
-        private void button_ingles_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeLanguage("en-US");
-        }
-
-        private void button_portugues_Click(object sender, RoutedEventArgs e)
-        {
-            ChangeLanguage("pt-BR");
+            WindowConfig windowConfig = new();
+            windowConfig.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            windowConfig.ShowDialog();
+            // Recarregar a interface do usuário para refletir as mudanças
+            var newWindow = new MainWindow();
+            Application.Current.MainWindow = newWindow;
+            newWindow.Show();
+            Close();
         }
     }
 }

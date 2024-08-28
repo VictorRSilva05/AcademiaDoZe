@@ -25,9 +25,7 @@
             <Button x:Name="button_treinos" Content="{x:Static resources:Idioma.txtTreinos}" Canvas.Left="10" Canvas.Top="235" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <Button x:Name="button_login_logoff" Content="{x:Static resources:Idioma.txtLogin}" Canvas.Left="10" Canvas.Top="260" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF 
                     " FontWeight="Bold" Click="button_login_logoff_Click"/>
-            <Button x:Name="button_espanhol" Content="es-ES" Canvas.Left="65" Canvas.Top="385" RenderTransformOrigin="0.218,0.928" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold" Click="button_espanhol_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Button x:Name="button_ingles" Content="en-US" Canvas.Left="65" Canvas.Top="360" RenderTransformOrigin="0.267,0.126" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold" Click="button_ingles_Click"/>
-            <Button x:Name="button_portugues" Content="pt-BR" Canvas.Left="66" Canvas.Top="335" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="MiSans Latin VF " FontWeight="Bold" Click="button_portugues_Click"/>
+            <Button x:Name="buttonConfig" Content="Config" Canvas.Left="65" Canvas.Top="329" RenderTransformOrigin="0.419,0.171" FontFamily="MiSans Latin VF " FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Click="buttonConfig_Click"/>
 
         </Canvas>
         <Label Content="Push it to the limit" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontSize="10" RenderTransformOrigin="0.22,1.226" Width="104" FontWeight="Bold"/>

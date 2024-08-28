@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows;
+using System.Configuration;
+using System.Globalization;
 
 namespace AcademiaDoZe_WPF
 {
@@ -19,6 +21,19 @@ namespace AcademiaDoZe_WPF
         /// Por exemplo, em cadeias de caracteres labelLogin.Content, em outros textBoxSenha.PasswordChar, ou seja, todas as propriedades podem ser ajustadas conforme o idioma e região em uso.
         /// </summary>
         /// <param name="parent">Informar o container inicial, geralmente this para pegar todos os campos da tela, ou então, por exemplo, o nome de um panel ou usercontrol.</param>
+        public static void AjustaIdiomaRegiao()
+        {
+            // pt-BR, en-US, es-ES
+            // ? indica que o valor pode ser nulo
+            string? auxIdiomaRegiao = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
+            // no ternário estamos tratando para isso não acontecer
+            string idiomaRegiao = (auxIdiomaRegiao is not null) ? auxIdiomaRegiao : "";
+            // Definir a cultura e ajusta o idioma/região
+            // o operador ! (null-forgiving) afirma que o valor já foi tratado e não será nulo aqui
+            CultureInfo culture = new(idiomaRegiao!);
+            Thread.CurrentThread.CurrentUICulture = culture;
+            Thread.CurrentThread.CurrentCulture = culture;
+        }
         public static void AjustaResources(DependencyObject parent)
         {
             if (parent == null) return;

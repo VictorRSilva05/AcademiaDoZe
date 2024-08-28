@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademiaDoZe_WPF"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="AcademiaDoZe_WPF.WindowConfig"
+        mc:Ignorable="d"
+        Title="WindowConfig" Height="241" Width="348">
+    <Grid Background="#FFEAE8E8" Height="231" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="labelConfiguracoes" Content="Configurações" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" FontFamily="MiSans Latin VF " FontWeight="Bold" Margin="5,0,0,0"/>
+        <ComboBox x:Name="comboBoxIdioma" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="120">
+            <System:String>pt-BR</System:String>
+            <System:String>en-US</System:String>
+            <System:String>es-ES</System:String>
+        </ComboBox>
+        <Label x:Name="labelIdioma" Content="Idioma/Região:" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+        <Button x:Name="buttonSalvar" Content="Salvar" FontFamily="MiSans Latin VF " FontWeight="Bold" Margin="114,148,114,0" Height="27" VerticalAlignment="Top" Click="buttonSalvar_Click"/>
+    </Grid>
+</Window>
