@@ -375,4 +375,10 @@
   <data name="txtAcademiaZe" xml:space="preserve">
     <value>Academia de Zé</value>
   </data>
+  <data name="LabelConfiguracoes.Content" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="labelIdioma.Content" xml:space="preserve">
+    <value>Idioma/Región</value>
+  </data>
 </root>

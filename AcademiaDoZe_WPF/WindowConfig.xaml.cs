@@ -26,6 +26,12 @@ namespace AcademiaDoZe_WPF
 
             //seleciona no comboBox o idioma/cultura atual
             comboBoxIdioma.SelectedItem = ConfigurationManager.AppSettings.Get("IdiomaRegiao");
+            this.Loaded += WindowConfig_Loaded;
+        }
+
+        private void WindowConfig_Loaded(object sender, RoutedEventArgs e)
+        {
+            ClassFuncoes.AjustaResources(this);
         }
 
         private void buttonSalvar_Click(object sender, RoutedEventArgs e)

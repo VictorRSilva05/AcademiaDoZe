@@ -61,6 +61,141 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Salvar.
+        /// </summary>
+        public static string buttonSalvar_Content {
+            get {
+                return ResourceManager.GetString("buttonSalvar.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alergias.
+        /// </summary>
+        public static string checkboxAlergias_Content {
+            get {
+                return ResourceManager.GetString("checkboxAlergias.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diabetes.
+        /// </summary>
+        public static string checkboxDiabetes_Content_ {
+            get {
+                return ResourceManager.GetString("checkboxDiabetes.Content ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gravidez.
+        /// </summary>
+        public static string checkboxGravidez_Content {
+            get {
+                return ResourceManager.GetString("checkboxGravidez.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Labirinto.
+        /// </summary>
+        public static string checkboxLabirinto_Content {
+            get {
+                return ResourceManager.GetString("checkboxLabirinto.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lesões musculares.
+        /// </summary>
+        public static string checkboxLesoesMusculares_Content {
+            get {
+                return ResourceManager.GetString("checkboxLesoesMusculares.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nenhuma.
+        /// </summary>
+        public static string checkboxNenhuma_Content {
+            get {
+                return ResourceManager.GetString("checkboxNenhuma.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outras.
+        /// </summary>
+        public static string checkboxOutras_Content {
+            get {
+                return ResourceManager.GetString("checkboxOutras.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pressão alta.
+        /// </summary>
+        public static string checkboxPressaoAlta_Content {
+            get {
+                return ResourceManager.GetString("checkboxPressaoAlta.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problemas respiratórios.
+        /// </summary>
+        public static string checkboxProblemasRespiratorios_Content {
+            get {
+                return ResourceManager.GetString("checkboxProblemasRespiratorios.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remédios uso contínuo.
+        /// </summary>
+        public static string checkboxRemediosUsoContinuo_Content {
+            get {
+                return ResourceManager.GetString("checkboxRemediosUsoContinuo.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Admissão.
+        /// </summary>
+        public static string labelAdmissao_Content {
+            get {
+                return ResourceManager.GetString("labelAdmissao.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Altura (cm).
+        /// </summary>
+        public static string labelAltura_Content {
+            get {
+                return ResourceManager.GetString("labelAltura.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Antebraço Dir.
+        /// </summary>
+        public static string labelAntebracoDir_Content {
+            get {
+                return ResourceManager.GetString("labelAntebracoDir.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Antebraço Esq.
+        /// </summary>
+        public static string labelAntebracoEsq_Content {
+            get {
+                return ResourceManager.GetString("labelAntebracoEsq.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bairro.
         /// </summary>
         public static string labelBairro_Content {
@@ -70,11 +205,92 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bíceps Dir.
+        /// </summary>
+        public static string labelBicepsDir_Content {
+            get {
+                return ResourceManager.GetString("labelBicepsDir.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bíceps Esq.
+        /// </summary>
+        public static string labelBicepsEsq_Content {
+            get {
+                return ResourceManager.GetString("labelBicepsEsq.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Aluno.
+        /// </summary>
+        public static string labelCadastrarAluno_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarAluno.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Avaliação.
+        /// </summary>
+        public static string labelCadastrarAvaliacao_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarAvaliacao.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Colaborador.
+        /// </summary>
+        public static string labelCadastrarColaborador_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarColaborador.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Frequência.
+        /// </summary>
+        public static string labelCadastrarFrequencia_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarFrequencia.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Logradouro.
+        /// </summary>
+        public static string labelCadastrarLogradouro_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarLogradouro.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Matrícula.
+        /// </summary>
+        public static string labelCadastrarMatricula_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarMatricula.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cadastrar Senha.
+        /// </summary>
+        public static string labelCadastrarSenha_Content {
+            get {
+                return ResourceManager.GetString("labelCadastrarSenha.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CEP.
         /// </summary>
-        public static string LabelCep_Content {
+        public static string labelCep_Content {
             get {
-                return ResourceManager.GetString("LabelCep.Content", resourceCulture);
+                return ResourceManager.GetString("labelCep.Content", resourceCulture);
             }
         }
         
@@ -88,11 +304,227 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cintura.
+        /// </summary>
+        public static string labelCintura_Content {
+            get {
+                return ResourceManager.GetString("labelCintura.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complemento.
+        /// </summary>
+        public static string labelComplemento_Content {
+            get {
+                return ResourceManager.GetString("labelComplemento.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurações.
+        /// </summary>
+        public static string LabelConfiguracoes_Content {
+            get {
+                return ResourceManager.GetString("LabelConfiguracoes.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coxa Direita.
+        /// </summary>
+        public static string labelCoxaDir_Content {
+            get {
+                return ResourceManager.GetString("labelCoxaDir.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coxa Esquerda.
+        /// </summary>
+        public static string labelCoxaEsq_Content {
+            get {
+                return ResourceManager.GetString("labelCoxaEsq.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CPF.
+        /// </summary>
+        public static string labelCpf_Content {
+            get {
+                return ResourceManager.GetString("labelCpf.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CPF Aluno.
+        /// </summary>
+        public static string labelCpfAluno_Content {
+            get {
+                return ResourceManager.GetString("labelCpfAluno.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data.
+        /// </summary>
+        public static string labelData_Content {
+            get {
+                return ResourceManager.GetString("labelData.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entrada.
+        /// </summary>
+        public static string labelEntrada_Content {
+            get {
+                return ResourceManager.GetString("labelEntrada.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fim.
+        /// </summary>
+        public static string labelFim_Content {
+            get {
+                return ResourceManager.GetString("labelFim.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Aluno.
+        /// </summary>
+        public static string labelIdAluno_Content {
+            get {
+                return ResourceManager.GetString("labelIdAluno.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma/Região.
+        /// </summary>
+        public static string labelIdioma_Content {
+            get {
+                return ResourceManager.GetString("labelIdioma.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IMC.
+        /// </summary>
+        public static string labelImc_Content {
+            get {
+                return ResourceManager.GetString("labelImc.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Início.
+        /// </summary>
+        public static string labelInicio_Content {
+            get {
+                return ResourceManager.GetString("labelInicio.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Laudo Médico.
+        /// </summary>
+        public static string labelLaudoMedico_Content {
+            get {
+                return ResourceManager.GetString("labelLaudoMedico.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logradouro.
         /// </summary>
         public static string labelLogradouro_Content {
             get {
                 return ResourceManager.GetString("labelLogradouro.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Massa Gorda.
+        /// </summary>
+        public static string labelMassaGorda_Content {
+            get {
+                return ResourceManager.GetString("labelMassaGorda.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Massa Marga.
+        /// </summary>
+        public static string labelMassaMagra_Content {
+            get {
+                return ResourceManager.GetString("labelMassaMagra.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nascimento.
+        /// </summary>
+        public static string labelNascimento_Content {
+            get {
+                return ResourceManager.GetString("labelNascimento.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome.
+        /// </summary>
+        public static string labelNome_Content {
+            get {
+                return ResourceManager.GetString("labelNome.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome aluno.
+        /// </summary>
+        public static string labelNomeAluno_Content {
+            get {
+                return ResourceManager.GetString("labelNomeAluno.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Número.
+        /// </summary>
+        public static string labelNumero_Content {
+            get {
+                return ResourceManager.GetString("labelNumero.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objetivo.
+        /// </summary>
+        public static string labelObjetivo_Content {
+            get {
+                return ResourceManager.GetString("labelObjetivo.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Observação.
+        /// </summary>
+        public static string labelObservacao_Content {
+            get {
+                return ResourceManager.GetString("labelObservacao.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Observação Restrição.
+        /// </summary>
+        public static string labelObservacaoRestricao_Content {
+            get {
+                return ResourceManager.GetString("labelObservacaoRestricao.Content", resourceCulture);
             }
         }
         
@@ -106,11 +538,218 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Panturrilha Dir.
+        /// </summary>
+        public static string labelPanturrilhaDir_Content {
+            get {
+                return ResourceManager.GetString("labelPanturrilhaDir.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Panturrilha Esq.
+        /// </summary>
+        public static string labelPanturrilhaEsq_Content {
+            get {
+                return ResourceManager.GetString("labelPanturrilhaEsq.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Percentual Gordura.
+        /// </summary>
+        public static string labelPercentualGordura_Content {
+            get {
+                return ResourceManager.GetString("labelPercentualGordura.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Peso (Kg).
+        /// </summary>
+        public static string labelPeso_Content {
+            get {
+                return ResourceManager.GetString("labelPeso.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Peso Ideal.
+        /// </summary>
+        public static string labelPesoIdeal_Content {
+            get {
+                return ResourceManager.GetString("labelPesoIdeal.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plano.
+        /// </summary>
+        public static string labelPlano_Content {
+            get {
+                return ResourceManager.GetString("labelPlano.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quadril.
+        /// </summary>
+        public static string labelQuadril_Content {
+            get {
+                return ResourceManager.GetString("labelQuadril.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Re-Senha.
+        /// </summary>
+        public static string labelReSenha_Content {
+            get {
+                return ResourceManager.GetString("labelReSenha.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restrições.
+        /// </summary>
+        public static string labelRestricoes_Content {
+            get {
+                return ResourceManager.GetString("labelRestricoes.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saída.
+        /// </summary>
+        public static string labelSaida_Content {
+            get {
+                return ResourceManager.GetString("labelSaida.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selecionar plano.
+        /// </summary>
+        public static string labelSelecionarPlano_Content {
+            get {
+                return ResourceManager.GetString("labelSelecionarPlano.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senha.
+        /// </summary>
+        public static string labelSenha_Content {
+            get {
+                return ResourceManager.GetString("labelSenha.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telefone.
+        /// </summary>
+        public static string labelTelefone_Content {
+            get {
+                return ResourceManager.GetString("labelTelefone.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tórax.
+        /// </summary>
+        public static string labelTorax_Content {
+            get {
+                return ResourceManager.GetString("labelTorax.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UF.
         /// </summary>
-        public static string LabelUf_Content {
+        public static string labelUf_Content {
             get {
-                return ResourceManager.GetString("LabelUf.Content", resourceCulture);
+                return ResourceManager.GetString("labelUf.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Administrador.
+        /// </summary>
+        public static string radioButtonAdministrador_Content {
+            get {
+                return ResourceManager.GetString("radioButtonAdministrador.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anual.
+        /// </summary>
+        public static string radioButtonAnual_Content {
+            get {
+                return ResourceManager.GetString("radioButtonAnual.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Atendente.
+        /// </summary>
+        public static string radioButtonAtendente_Content {
+            get {
+                return ResourceManager.GetString("radioButtonAtendente.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CLT.
+        /// </summary>
+        public static string radioButtonClt_Content {
+            get {
+                return ResourceManager.GetString("radioButtonClt.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estágio.
+        /// </summary>
+        public static string radioButtonEstagio_Content {
+            get {
+                return ResourceManager.GetString("radioButtonEstagio.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Instrutor.
+        /// </summary>
+        public static string radioButtonInstrutor_Content {
+            get {
+                return ResourceManager.GetString("radioButtonInstrutor.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mensal.
+        /// </summary>
+        public static string radioButtonMensal_Content {
+            get {
+                return ResourceManager.GetString("radioButtonMensal.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Semestral.
+        /// </summary>
+        public static string radioButtonSemestral_Content {
+            get {
+                return ResourceManager.GetString("radioButtonSemestral.Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Academia do Zé.
+        /// </summary>
+        public static string txtAcademiaZe {
+            get {
+                return ResourceManager.GetString("txtAcademiaZe", resourceCulture);
             }
         }
         
