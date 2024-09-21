@@ -17,6 +17,7 @@ namespace AcademiaDoZe_WPF
 {
     /// <summary>
     /// Interaction logic for WindowConfig.xaml
+    /// This window is used to change the language of the application
     /// </summary>
     public partial class WindowConfig : Window
     {

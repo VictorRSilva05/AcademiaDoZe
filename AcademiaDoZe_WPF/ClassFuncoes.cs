@@ -8,6 +8,9 @@ using System.Windows.Media;
 using System.Windows;
 using System.Configuration;
 using System.Globalization;
+using System.Windows.Input;
+using System.Text.RegularExpressions;
+using System.Windows.Controls;
 
 namespace AcademiaDoZe_WPF
 {
@@ -50,6 +53,84 @@ namespace AcademiaDoZe_WPF
                 }
                 // Chama recursivamente para percorrer os filhos do filho atual
                 AjustaResources(child);
+            }
+        }
+        /// <summary>
+        /// Tratar eventos de teclado, no caso tecla ENTER funcionando com TAB e tecla ESC para fechar
+        /// </summary>
+        /// <param name="sender">Objeto que gerou o evento</param>
+        /// <param name="e">Evento que foi capturado</param>
+        /// <example>No construtor do formulário:
+        /// this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+        ///</example>
+        public static void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Se a tecla ENTER for pressionada
+            if (e.Key == Key.Enter)
+            {
+                // Move o foco para o próximo controle, como o TAB faria
+                var focusedElement = Keyboard.FocusedElement as UIElement;
+                // Move o foco para o próximo controle na ordem de tabulação
+                focusedElement?.MoveFocus(new TraversalRequest(FocusNavigationDirection.Next));
+                e.Handled = true; // Previne comportamento padrão do ENTER (como som)
+            }
+            // Se a tecla ESC for pressionada
+            else if (e.Key == Key.Escape)
+            {
+                // verifica se é window e fecha
+                if (sender is Window window)
+                {
+                    window.Close();
+                }
+                // carrega uma página inicial
+                else
+                {
+                    if (Application.Current.MainWindow is MainWindow mainWindow)
+                    {
+                        // precisa passar o método para public
+                        mainWindow.button_home_Click(sender, e);
+                        
+                    }
+                }
+            }
+        }
+        // Evento para capturar a entrada de texto no TextBox e aplicar a máscara de CPF
+        public static void TxtCPF_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (sender is TextBox textBoxCpf)
+            {
+                e.Handled = !Regex.IsMatch(e.Text, @"^\d+$"); // Ignora entrada se não for um dígito
+                if (!e.Handled)
+                {
+                    // Recupera o texto atual do TextBox
+                    var text = textBoxCpf.Text;
+                    // Remove qualquer caracter não numérico
+                    text = Regex.Replace(text, @"[^\d]", "");
+                    // Adiciona o novo caractere
+                    text += e.Text;
+                    // Aplica a máscara de CPF (###.###.###-##)
+                    if (text.Length <= 11)
+                    {
+                        if (text.Length > 9)
+                        {
+                            textBoxCpf.Text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6, 3)}-{text.Substring(9)}";
+                        }
+                        else if (text.Length > 6)
+                        {
+                            textBoxCpf.Text = $"{text.Substring(0, 3)}.{text.Substring(3, 3)}.{text.Substring(6)}";
+                        }
+                        else if (text.Length > 3)
+                        {
+                            textBoxCpf.Text = $"{text.Substring(0, 3)}.{text.Substring(3)}";
+                        }
+                        else
+                        {
+                            textBoxCpf.Text = text;
+                        }
+                        textBoxCpf.CaretIndex = textBoxCpf.Text.Length; // Move o cursor para o fim
+                    }
+                    e.Handled = true; // Bloqueia a entrada direta no TextBox
+                }
             }
         }
     }

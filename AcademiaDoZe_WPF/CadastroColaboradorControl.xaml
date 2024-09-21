@@ -13,7 +13,7 @@
         <Canvas Margin="37,60,204,291" Background="#FFFAFAFA" Grid.RowSpan="2">
             <Label x:Name="labelId" Content="ID" Canvas.Left="54" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603"/>
             <TextBox x:Name="textbox_id_colaborador" Canvas.Left="54" TextWrapping="Wrap" Canvas.Top="56" Width="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_cpf_colaborador" Canvas.Left="155" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="textBoxCpf" Canvas.Left="155" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_telefone_colaborador" Canvas.Left="357" TextWrapping="Wrap" Canvas.Top="56" Width="194" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelCpf" Content="CPF" Canvas.Left="155" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <Label x:Name="labelTelefone" Content="Telefone:" Canvas.Left="358" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>

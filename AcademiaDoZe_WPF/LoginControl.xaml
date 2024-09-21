@@ -7,13 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" Width="330">
     <Grid Margin="0,0,3,0" Background="#FFEAE8E8">
-        <Canvas Margin="39,82,39,0" Background="White" Height="242" VerticalAlignment="Top">
-            <TextBox x:Name="textbox_cpf_login" Canvas.Left="50" TextWrapping="Wrap" Canvas.Top="81" Width="149" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_senha_login" Canvas.Left="50" TextWrapping="Wrap" Canvas.Top="168" Width="149" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="labelCpf" Content="CPF:" Canvas.Left="50" Canvas.Top="41" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <Label x:Name="labelSenha" Content="Senha:" Canvas.Left="50" Canvas.Top="121" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
-        </Canvas>
-        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,362,0,0"/>
+        <Button x:Name="buttonSalvar" TabIndex="2" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,362,0,0"/>
         <Label x:Name="labelLogin" Content="Login" Margin="39,19,163,0" VerticalAlignment="Top" FontSize="36" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
+        <Label x:Name="labelCpf" Content="CPF:" FontFamily="MiSans Latin VF " FontWeight="Bold" Margin="89,115,200,0" Height="26" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_cpf_login"  TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,146,0,0"/>
+        <Label x:Name="labelSenha" Content="Senha:" FontWeight="Bold" FontFamily="MiSans Latin VF " Margin="89,185,188,0" RenderTransformOrigin="0.935,0.583" Height="26" VerticalAlignment="Top"/>
+        <PasswordBox TabIndex ="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="148" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" />
     </Grid>
 </UserControl>

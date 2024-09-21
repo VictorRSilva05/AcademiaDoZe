@@ -5,6 +5,8 @@ namespace AcademiaDoZe_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// This window, as the name implies is the main window for the application
+    /// It also serves as a hub for the diferent options
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -93,6 +95,11 @@ namespace AcademiaDoZe_WPF
             Application.Current.MainWindow = newWindow;
             newWindow.Show();
             Close();
+        }
+
+        public void button_home_Click(object sender, RoutedEventArgs e)
+        {
+            ContentControl_main.Content = null;
         }
     }
 }

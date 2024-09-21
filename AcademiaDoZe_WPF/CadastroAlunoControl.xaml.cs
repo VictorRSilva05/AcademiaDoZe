@@ -12,6 +12,9 @@ namespace AcademiaDoZe_WPF
         {
             InitializeComponent();
             this.Loaded += UserControl_Loaded;
+            this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)

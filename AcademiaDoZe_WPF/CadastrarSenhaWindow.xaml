@@ -18,7 +18,7 @@
         <Canvas Margin="24,76,23,79" Background="White" Grid.RowSpan="2" Grid.ColumnSpan="2">
             <Label x:Name="labelId" Content="ID" Canvas.Left="25" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBox x:Name="textbox_senha" Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="193" Width="157" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.133,0.589"/>
-            <TextBox x:Name="textbox_cpf_senha" Canvas.Left="220" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxCpf" Canvas.Left="220" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelCpf" Content="CPF" Canvas.Left="220" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.365,0.276"/>
             <Label x:Name="labelNome" Content="Nome:" Canvas.Left="25" Canvas.Top="92" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <TextBox x:Name="textbox_nome_senha" Canvas.Left="25" TextWrapping="Wrap" Canvas.Top="123" Width="361" HorizontalAlignment="Left" VerticalAlignment="Center" />
