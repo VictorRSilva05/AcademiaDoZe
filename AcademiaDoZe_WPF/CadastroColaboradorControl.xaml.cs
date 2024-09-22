@@ -14,6 +14,7 @@ namespace AcademiaDoZe_WPF
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
+            textbox_id_colaborador.Focus();
         }
 
         private void CadastroColaboradorControl_Loaded(object sender, System.Windows.RoutedEventArgs e)

@@ -16,6 +16,7 @@ namespace AcademiaDoZe_WPF
             this.Loaded += CadastroLogradouroControl_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            textbox_id.Focus();
         }
 
         private void CadastroLogradouroControl_Loaded(object sender, System.Windows.RoutedEventArgs e)

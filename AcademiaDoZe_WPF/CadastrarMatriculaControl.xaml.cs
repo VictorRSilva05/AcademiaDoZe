@@ -15,6 +15,7 @@ namespace AcademiaDoZe_WPF
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
+            textbox_id_matricula.Focus();
         }
 
         private void CadastrarMatriculaControl_Loaded(object sender, RoutedEventArgs e)

@@ -13,6 +13,7 @@ namespace AcademiaDoZe_WPF
             this.Loaded += LoginControl_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            textbox_cpf_login.Focus();
         }
 
         private void LoginControl_Loaded(object sender, System.Windows.RoutedEventArgs e)

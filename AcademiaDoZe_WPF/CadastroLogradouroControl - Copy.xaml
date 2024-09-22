@@ -28,21 +28,21 @@
                 </TransformGroup>
             </Canvas.RenderTransform>
             <Label x:Name="labelId" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_id" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_cep" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_logradouro" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_id" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_cep" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_logradouro" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Label x:Name="labelCep" Content="CEP" Canvas.Left="155" Canvas.Top="21" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <Label x:Name="labelLogradouro" Content="Logradouro" Canvas.Left="297" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
             <Label x:Name="labelBairro" Content="Bairro" Canvas.Left="57" Canvas.Top="84" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-            <TextBox x:Name="textbox_bairro" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="55" TextWrapping="Wrap" Canvas.Top="113" Width="222" HorizontalAlignment="Left" VerticalAlignment="Top" />
-            <TextBox x:Name="textbox_cidade" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="114" Width="274" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_bairro" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="55" TextWrapping="Wrap" Canvas.Top="113" Width="222" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <TextBox x:Name="textbox_cidade" TabIndex="4" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="114" Width="274" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Label x:Name="labelCidade" Content="Cidade" Canvas.Left="293" Canvas.Top="82" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.37"/>
-            <TextBox x:Name="textbox_pais" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Width="391" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="180" VerticalAlignment="Top"/>
+            <TextBox x:Name="textbox_pais" TabIndex="6" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Width="391" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="180" VerticalAlignment="Top"/>
             <Label x:Name="labelPais" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="combobox_uf" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
+            <ComboBox x:Name="combobox_uf" TabIndex="5" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
             <Label x:Name="labelUf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
-        <Button x:Name="buttonSalvar" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,313,0,0"/>
+        <Button x:Name="buttonSalvar" TabIndex="7" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,313,0,0"/>
         <Label x:Name="labelCadastrarLogradouro" Content="Cadastrar Logradouro" HorizontalAlignment="Left" Margin="43,8,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="36"/>
 
     </Grid>
