@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AcademiaDoZe_WPF"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" Width="677" Height="708" Loaded="UserControl_Loaded">
     <Grid Background="#FFEAE8E8" Margin="10,10,0,0">
         <Grid.RowDefinitions>
@@ -11,10 +12,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Canvas Margin="32,66,51,82" Background="#FFFAFAFA">
+            <xctk:MaskedTextBox Mask="000\.000\.000\-00" Width="125" TabIndex="1"  GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="155" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <xctk:MaskedTextBox Mask="(000) 0000-0000" Width="126" TabIndex="2"  GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="351" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Label x:Name="labelId" Content="ID" Canvas.Left="54" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603"/>
             <TextBox x:Name="textbox_id_aluno" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="54" TextWrapping="Wrap" Canvas.Top="56" Width="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox x:Name="textBoxCpf" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="155" TextWrapping="Wrap" Canvas.Top="56" Width="166" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_telefone" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="357" TextWrapping="Wrap" Canvas.Top="56" Width="194" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelCpf" Content="CPF" Canvas.Left="155" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <Label x:Name="labelTelefone" Content="Telefone:" Canvas.Left="358" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
             <Label x:Name="labelNome" Content="Nome:" Canvas.Left="54" Canvas.Top="92" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
@@ -32,9 +33,9 @@
                         <TranslateTransform Y="0.038"/>
                     </TransformGroup>
                 </Canvas.RenderTransform>
+                <xctk:MaskedTextBox Mask="00000-000" Width="124" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="153" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center" />
                 <Label x:Name="label_id_endereco_aluno" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBox x:Name="textbox_id_endereco_aluno" TabIndex="6" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBox x:Name="textbox_cep_endereco_aluno" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="158" TextWrapping="Wrap" Canvas.Top="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <TextBox x:Name="textbox_logradouro_endereco_aluno" TabIndex="8" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="254" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <Label x:Name="labelCep" Content="CEP" Canvas.Left="155" Canvas.Top="21" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
                 <Label x:Name="labelLogradouro" Content="Logradouro:" Canvas.Left="297" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>

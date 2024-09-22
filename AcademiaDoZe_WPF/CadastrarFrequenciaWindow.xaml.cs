@@ -14,7 +14,6 @@ namespace AcademiaDoZe_WPF
             this.Loaded += CadastrarFrequenciaWindow_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
             textbox_id_frequencia.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);

@@ -13,9 +13,7 @@ namespace AcademiaDoZe_WPF
             InitializeComponent();
             this.Loaded += CadastrarSenhaWindow_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
-            textbox_id_senha.Focus();
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);            textbox_id_senha.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
