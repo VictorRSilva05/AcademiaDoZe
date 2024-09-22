@@ -16,6 +16,8 @@ namespace AcademiaDoZe_WPF
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             textBoxCpf.PreviewTextInput += ClassFuncoes.TxtCPF_PreviewTextInput;
             textbox_id_aluno.Focus();
+            this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
