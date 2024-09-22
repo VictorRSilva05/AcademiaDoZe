@@ -12,25 +12,25 @@
         </Grid.RowDefinitions>
         <Canvas Margin="0,70,0,97" Background="White" HorizontalAlignment="Center" Width="688" Grid.RowSpan="2">
             <Label x:Name="labelId" Content="ID:" HorizontalAlignment="Left" Canvas.Left="34" Canvas.Top="25" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_id_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="56" Width="64" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_id_matricula" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="56" Width="64" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelIdAluno" Content="ID Aluno:" Canvas.Left="138" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_id_aluno_matricula" Canvas.Left="141" TextWrapping="Wrap" Canvas.Top="56" Width="61" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_id_aluno_matricula" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="141" TextWrapping="Wrap" Canvas.Top="56" Width="61" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelCpfAluno" Content="CPF Aluno:" Canvas.Left="250" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textBoxCpf" Canvas.Left="250" TextWrapping="Wrap" Canvas.Top="56" Width="94" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxCpf" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="250" TextWrapping="Wrap" Canvas.Top="56" Width="94" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelNomeAluno" Content="Nome Aluno:" Canvas.Left="34" Canvas.Top="96" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <TextBox x:Name="textbox_nome_aluno_matricula" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="127" Width="310" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_nome_aluno_matricula" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="127" Width="310" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelPlano" Content="Plano" Canvas.Left="34" Canvas.Top="179" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <RadioButton x:Name="radioButtonMensal" Content="Mensal" Canvas.Left="34" Canvas.Top="210" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
             <RadioButton x:Name="radioButtonTrimestral" Content="Trimestral" Canvas.Left="34" Canvas.Top="227" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <RadioButton x:Name="radioButtonSemestral" Content="Semestral" Canvas.Left="34" Canvas.Top="245" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" FontFamily="MiSans Latin VF "/>
             <RadioButton x:Name="radioButtonAnual" Content="Anual" Canvas.Left="34" Canvas.Top="263" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
             <Label x:Name="labelInicio" Content="Início" Canvas.Left="181" Canvas.Top="179" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-            <DatePicker x:Name="datepicker_inicio" Canvas.Left="181" Canvas.Top="205"/>
+            <DatePicker x:Name="datepicker_inicio" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="181" Canvas.Top="205"/>
             <Label x:Name="labelFim" Content="Fim" Canvas.Left="181" Canvas.Top="228" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <DatePicker x:Name="datepicker_fim" Canvas.Left="181" Canvas.Top="254"/>
+            <DatePicker x:Name="datepicker_fim" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="181" Canvas.Top="254"/>
             <Label x:Name="labelObjetivo" Content="Objetivo:" Canvas.Left="34" Canvas.Top="299" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="textbox_objetivo" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBox x:Name="textbox_objetivo_Copy" Canvas.Left="395" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_objetivo" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textbox_objetivo_Copy" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="395" TextWrapping="Wrap" Canvas.Top="330" Width="253" Height="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelObservacaoRestricao" Content="Observação Restrição" Canvas.Left="395" Canvas.Top="299" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelRestricoes" Content="Restrições" Canvas.Left="383" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MiSans Latin VF 
 " FontWeight="Bold"/>
@@ -45,7 +45,7 @@
             <CheckBox x:Name="checkboxAlergias" Content="Alergias" Canvas.Left="386" Canvas.Top="198" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <CheckBox x:Name="checkboxRemediosUsoContinuo" Content="Remédios uso contínuo" Canvas.Left="386" Canvas.Top="217" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <CheckBox x:Name="checkboxOutras" Content="Outras" Canvas.Left="386" Canvas.Top="237" Width="149" Checked="checkbox_problemas_cardiacos_Checked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox x:Name="textboxLaudo_medico" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="459" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="textboxLaudo_medico" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="459" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Label x:Name="labelLaudoMedico" Content="Laudo Médico:" Canvas.Left="34" Canvas.Top="420" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.513,0.656"/>
             <Button x:Name="buttonSalvar" Content="Salvar" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" Width="124" HorizontalAlignment="Left" Canvas.Left="560" Canvas.Top="530" VerticalAlignment="Bottom"/>
         </Canvas>
