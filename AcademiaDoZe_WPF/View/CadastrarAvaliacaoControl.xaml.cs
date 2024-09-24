@@ -1,26 +1,31 @@
 ﻿using System.Windows.Controls;
 
-namespace AcademiaDoZe_WPF
+namespace AcademiaDoZe_WPF.View
 {
     /// <summary>
-    /// Interaction logic for LoginControl.xaml
+    /// Interaction logic for CadastrarAvaliacaoControl.xaml
     /// </summary>
-    public partial class LoginControl : UserControl
+    public partial class CadastrarAvaliacaoControl : UserControl
     {
-        public LoginControl()
+        public CadastrarAvaliacaoControl()
         {
             InitializeComponent();
-            this.Loaded += LoginControl_Loaded;
+            this.Loaded += CadastrarAvaliacaoControl_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            textBoxCpf.Focus();
+            textbox_id_avalicao.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
 
-        private void LoginControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        private void CadastrarAvaliacaoControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             ClassFuncoes.AjustaResources(this);
+        }
+
+        private void textbox_antebraco_esq_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
         private void Box_GotFocus(object sender, System.Windows.RoutedEventArgs e)
         {
@@ -50,8 +55,5 @@ namespace AcademiaDoZe_WPF
                 passwordBox.Background = cor;
             }
         }
-
     }
-
-
 }

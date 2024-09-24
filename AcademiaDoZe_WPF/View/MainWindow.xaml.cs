@@ -1,7 +1,9 @@
-﻿using System.Globalization;
+﻿using System.ComponentModel;
+using System.Configuration;
+using System.Globalization;
 using System.Windows;
 
-namespace AcademiaDoZe_WPF
+namespace AcademiaDoZe_WPF.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -10,9 +12,21 @@ namespace AcademiaDoZe_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Atributos para conexão e persistência com o banco de dados
+        private string ConnectionString { get; set; }
+        private string ProviderName { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+
+            // valida a conexão com o banco de dados
+            ClassFuncoes.ValidaConexaoDB();
+
+            // busca os dados de conexão com o banco de dados, do arquivo de configuração
+            // e deixa disponível para toda a aplicação através de propriedades
+            ProviderName = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            ConnectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
         }
 
         private void ChangeLanguage(string cultureCode)
@@ -100,6 +114,23 @@ namespace AcademiaDoZe_WPF
         public void button_home_Click(object sender, RoutedEventArgs e)
         {
             ContentControl_main.Content = null;
+        }
+
+        void DataWindow_Closing(object sender, CancelEventArgs e)
+        {
+            string msg = Properties.Idioma.confirmExitMessage;
+            string title = Properties.Idioma.confirmExitTitle;
+
+            MessageBoxResult result =
+              MessageBox.Show(
+                msg,
+                title,
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning);
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

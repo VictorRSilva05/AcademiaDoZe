@@ -381,4 +381,10 @@
   <data name="labelIdioma.Content" xml:space="preserve">
     <value>Idioma/Região</value>
   </data>
+  <data name="confirmExitMessage" xml:space="preserve">
+    <value>Deseja mesmo sair?</value>
+  </data>
+  <data name="confirmExitTitle" xml:space="preserve">
+    <value>Academia do Zé</value>
+  </data>
 </root>

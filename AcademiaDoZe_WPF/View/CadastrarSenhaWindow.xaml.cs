@@ -1,24 +1,24 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace AcademiaDoZe_WPF
+namespace AcademiaDoZe_WPF.View
 {
     /// <summary>
-    /// Interaction logic for CadastroAlunoControl.xaml
+    /// Interaction logic for CadastrarSenhaWindow.xaml
     /// </summary>
-    public partial class CadastroAlunoControl : UserControl
+    public partial class CadastrarSenhaWindow : Window
     {
-        public CadastroAlunoControl()
+        public CadastrarSenhaWindow()
         {
             InitializeComponent();
-            this.Loaded += UserControl_Loaded;
+            this.Loaded += CadastrarSenhaWindow_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);            textbox_id_aluno.Focus();
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);            textbox_id_senha.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
 
-        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        private void CadastrarSenhaWindow_Loaded(object sender, RoutedEventArgs e)
         {
             ClassFuncoes.AjustaResources(this);
         }

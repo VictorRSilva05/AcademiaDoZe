@@ -1,27 +1,25 @@
-﻿using System.ComponentModel;
-using System.Resources;
+﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace AcademiaDoZe_WPF
+namespace AcademiaDoZe_WPF.View
 {
     /// <summary>
-    /// Interaction logic for CadastroLogradouroControl.xaml
+    /// Interaction logic for CadastrarFrequenciaWindow.xaml
     /// </summary>
-    public partial class CadastroLogradouroControl : UserControl
+    public partial class CadastrarFrequenciaWindow : Window
     {
-        public CadastroLogradouroControl()
+        public CadastrarFrequenciaWindow()
         {
             InitializeComponent();
-
-            this.Loaded += CadastroLogradouroControl_Loaded;
+            this.Loaded += CadastrarFrequenciaWindow_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            textbox_id.Focus();
+            textbox_id_frequencia.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
         }
 
-        private void CadastroLogradouroControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
+        private void CadastrarFrequenciaWindow_Loaded(object sender, RoutedEventArgs e)
         {
             ClassFuncoes.AjustaResources(this);
         }

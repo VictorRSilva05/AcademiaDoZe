@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
-using System.Windows;
+﻿using System.ComponentModel;
 using System.Configuration;
 using System.Globalization;
-using System.Windows.Input;
 using System.Text.RegularExpressions;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Data.SqlClient;
+using MySql.Data;
+using System.Data.Common;
+using AcademiaDoZe_WPF.View;
 
 namespace AcademiaDoZe_WPF
 {
@@ -131,6 +130,36 @@ namespace AcademiaDoZe_WPF
                     }
                     e.Handled = true; // Bloqueia a entrada direta no TextBox
                 }
+            }
+        }
+
+        public static void ValidaConexaoDB()
+        {
+            DbProviderFactory factory;
+            string provider = ConfigurationManager.ConnectionStrings["BD"].ProviderName;
+            string connectionString = ConfigurationManager.ConnectionStrings["BD"].ConnectionString;
+            try
+            {
+                factory = DbProviderFactories.GetFactory(provider);
+                using var conexao = factory.CreateConnection();
+                conexao!.ConnectionString = connectionString;
+                using var comando = factory.CreateCommand();
+                comando!.Connection = conexao;
+                conexao.Open();
+            }
+            catch (DbException ex)
+            {
+                MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.ErrorCode}\n\n{ex.SqlState}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider, connectionString);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Source}\n\n{ex.Message}\n\n{ex.StackTrace}");
+                var auxConfig = new WindowConfig(provider, connectionString);
+                auxConfig.ShowDialog();
+                ValidaConexaoDB();
             }
         }
 

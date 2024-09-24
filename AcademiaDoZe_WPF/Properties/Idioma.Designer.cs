@@ -160,6 +160,24 @@ namespace AcademiaDoZe_WPF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deseja mesmo sair?.
+        /// </summary>
+        public static string confirmExitMessage {
+            get {
+                return ResourceManager.GetString("confirmExitMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Academia do Zé.
+        /// </summary>
+        public static string confirmExitTitle {
+            get {
+                return ResourceManager.GetString("confirmExitTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Admissão.
         /// </summary>
         public static string labelAdmissao_Content {
