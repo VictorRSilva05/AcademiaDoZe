@@ -132,5 +132,13 @@ namespace AcademiaDoZe_WPF.View
                 e.Cancel = true;
             }
         }
+
+        private void ButtonLogradouro_Click(object sender, RoutedEventArgs e)
+        {
+            if (ContentControl_main.Content is not PageListaLogradouro)
+            {
+                ContentControl_main.Content = new PageListaLogradouro(ProviderName, ConnectionString);
+            }
+        }
     }
 }
