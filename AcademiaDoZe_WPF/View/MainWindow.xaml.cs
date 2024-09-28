@@ -43,25 +43,19 @@ namespace AcademiaDoZe_WPF.View
             newWindow.Show();
             oldWindow.Close();
         }
-        private void button_logradouro_Click(object sender, RoutedEventArgs e)
-        {
-            CadastroLogradouroControl cadastroLogradouroControl = new CadastroLogradouroControl();
-
-            ContentControl_main.Content = cadastroLogradouroControl;
-        }
 
         private void button_aluno_Click(object sender, RoutedEventArgs e)
         {
             CadastroAlunoControl cadastroAlunoControl = new CadastroAlunoControl();
 
-            ContentControl_main.Content = cadastroAlunoControl;
+            Frame_main.Content = cadastroAlunoControl;
         }
 
         private void button_colaborador_Click(object sender, RoutedEventArgs e)
         {
             CadastroColaboradorControl cadastroColaboradorControl = new CadastroColaboradorControl();
 
-            ContentControl_main.Content = cadastroColaboradorControl;
+            Frame_main.Content = cadastroColaboradorControl;
         }
 
         private void button_senha_Click(object sender, RoutedEventArgs e)
@@ -75,14 +69,14 @@ namespace AcademiaDoZe_WPF.View
         {
             CadastrarMatriculaControl cadastrarMatriculaControl = new CadastrarMatriculaControl();
 
-            ContentControl_main.Content = cadastrarMatriculaControl;
+            Frame_main.Content = cadastrarMatriculaControl;
         }
 
         private void button_avaliacao_Click(object sender, RoutedEventArgs e)
         {
             CadastrarAvaliacaoControl cadastrarAvaliacaoControl = new CadastrarAvaliacaoControl();
 
-            ContentControl_main.Content = cadastrarAvaliacaoControl;
+            Frame_main.Content = cadastrarAvaliacaoControl;
         }
 
         private void button_frequencia_Click(object sender, RoutedEventArgs e)
@@ -96,7 +90,7 @@ namespace AcademiaDoZe_WPF.View
         {
             LoginControl loginControl = new LoginControl();
 
-            ContentControl_main.Content = loginControl;
+            Frame_main.Content = loginControl;
         }
 
         private void buttonConfig_Click(object sender, RoutedEventArgs e)
@@ -113,7 +107,7 @@ namespace AcademiaDoZe_WPF.View
 
         public void button_home_Click(object sender, RoutedEventArgs e)
         {
-            ContentControl_main.Content = null;
+            Frame_main.Content = null;
         }
 
         void DataWindow_Closing(object sender, CancelEventArgs e)
@@ -133,11 +127,11 @@ namespace AcademiaDoZe_WPF.View
             }
         }
 
-        private void ButtonLogradouro_Click(object sender, RoutedEventArgs e)
+        private void button_logradouro_Click(object sender, RoutedEventArgs e)
         {
-            if (ContentControl_main.Content is not PageListaLogradouro)
+            if (Frame_main.Content is not PageListaLogradouro)
             {
-                ContentControl_main.Content = new PageListaLogradouro(ProviderName, ConnectionString);
+                Frame_main.Content = new PageListaLogradouro(ProviderName, ConnectionString);
             }
         }
     }

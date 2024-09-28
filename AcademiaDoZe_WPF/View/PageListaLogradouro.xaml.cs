@@ -53,7 +53,7 @@ namespace AcademiaDoZe_WPF.View
 
         private void ButtonNovo_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new CadastroLogradouroControl(ProviderName, ConnectionString));
+            NavigationService?.Navigate(new CadastroLogradouroControl());
         }
 
     }
