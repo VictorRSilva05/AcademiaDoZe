@@ -8,28 +8,48 @@ using System.Data.Common;
 using System.Collections.ObjectModel;
 using AcademiaDoZe_WPF.Model;
 using System.Runtime.ConstrainedExecution;
+using AcademiaDoZe_WPF.DataAcess;
 
 namespace AcademiaDoZe_WPF.ViewModel
 {
-    internal class LogradouroViewModel : INotifyPropertyChanged
+    public class LogradouroViewModel : ViewModelBase
     {
 
         // implementa a interface INotifyPropertyChanged
+        /*
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        */
+
+
         // utilizados no databinding
         public ObservableCollection<Logradouro> Logradouros { get; set; }
         private Logradouro _selectedLogradouro;
         public Logradouro SelectedLogradouro
         {
-            get => _selectedLogradouro; set
+            get { return _selectedLogradouro; }
+            set
             {
                 _selectedLogradouro = value;
-                OnPropertyChanged(nameof(SelectedLogradouro));
+                OnPropertyChanged("SelectedLogradouro");
             }
+        }
+        private LogradouroRepository _repository;
+        public LogradouroViewModel()
+        {
+            Logradouros = new ObservableCollection<Logradouro>();
+            _repository = new LogradouroRepository();
+            GetAll();
+        }
+
+        public void GetAll()
+        {
+            // busca no banco de dados e carrega em Logradouros
+            Logradouros.Clear();
+            _repository.GetAll().ForEach(data => Logradouros.Add(data));
         }
         // Atributos para conexão e persistência com o banco de dados
         private readonly DbProviderFactory factory;
