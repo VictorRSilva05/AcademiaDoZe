@@ -9,6 +9,8 @@ using System.Collections.ObjectModel;
 using AcademiaDoZe_WPF.Model;
 using System.Runtime.ConstrainedExecution;
 using AcademiaDoZe_WPF.DataAcess;
+using System.Windows.Input;
+using System.Windows;
 
 namespace AcademiaDoZe_WPF.ViewModel
 {
@@ -38,6 +40,11 @@ namespace AcademiaDoZe_WPF.ViewModel
             }
         }
         private LogradouroRepository _repository;
+
+        //Comandos para CRUD
+        public ICommand LogradouroAdicionarCommand { get; set; }
+        public ICommand LogradouroAtualizarCommand { get; set; }
+        public ICommand LogradouroRemoverCommand { get; set; }
         public LogradouroViewModel()
         {
             Logradouros = new ObservableCollection<Logradouro>();
@@ -56,6 +63,77 @@ namespace AcademiaDoZe_WPF.ViewModel
         private string ConnectionString { get; set; }
         private string ProviderName { get; set; }
         // Construtor
+
+        // métodos com as operações de CRUD aqui
+        private void AdicionarLogradouro(object obj)
+        {
+            if (SelectedLogradouro == null) return;
+            if (MessageBox.Show("Confirma?", "Logradouro", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    _repository.Add(SelectedLogradouro);
+                    MessageBox.Show("Sucesso.");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    GetAll();
+                }
+            }
+        }
+
+        // métodos com as operações de CRUD aqui
+        private void AtualizarLogradouro(object obj)
+        {
+            if (SelectedLogradouro == null) return;
+            if (MessageBox.Show("Confirma?", "Logradouro", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    _repository.Update(SelectedLogradouro);
+
+                    MessageBox.Show("Sucesso.");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    GetAll();
+                }
+            }
+        }
+
+        // métodos com as operações de CRUD aqui
+        private void RemoverLogradouro(object obj)
+        {
+            if (SelectedLogradouro == null) return;
+            if (MessageBox.Show("Confirma?", "Logradouro", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    _repository.Delete(SelectedLogradouro);
+
+                    MessageBox.Show("Sucesso.");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    GetAll();
+                }
+            }
+        }
         public LogradouroViewModel(string providerName, string connectionString)
         {
             ConnectionString = connectionString;
@@ -143,11 +221,11 @@ namespace AcademiaDoZe_WPF.ViewModel
             using var comando = factory.CreateCommand(); //Cria comando
             comando!.Connection = conexao; //Atribui conexão
                                            //Adiciona parâmetro (@campo e valor) var id = comando.CreateParameter();
-            var id= comando.CreateParameter();
+            var id = comando.CreateParameter();
             id.ParameterName = "@id";
             id.Value = dado.Id;
             comando.Parameters.Add(id);
-            
+
             var cep = comando.CreateParameter();
             cep.ParameterName = "@cep";
             cep.Value = dado.Cep;
