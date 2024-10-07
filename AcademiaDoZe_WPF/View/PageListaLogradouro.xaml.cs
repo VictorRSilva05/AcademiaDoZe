@@ -37,12 +37,12 @@ namespace AcademiaDoZe_WPF.View
             try
             {
                 // criação de objeto ViewModel
-                ViewModelLogradouro = new LogradouroViewModel(ProviderName, ConnectionString);
+                //ViewModelLogradouro = new LogradouroViewModel(ProviderName, ConnectionString);
                 // carrega os dados
-                ViewModelLogradouro.Load();
+                //ViewModelLogradouro.Load();
                 // associa o objeto da ViewModel ao DataContext da janela
                 // DataContext é uma propriedade que permite que elementos de interface gráfica sejam associados a objetos de dados
-                DataContext = ViewModelLogradouro;
+                //DataContext = ViewModelLogradouro;
             }
             catch
             {

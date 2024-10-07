@@ -107,7 +107,7 @@ namespace AcademiaDoZe_WPF.DataAcess
             conexao.Open();
             //realiza o UPDATE
             comando.CommandText = @"UPDATE tb_logradouro SET cep = @cep, pais = @pais, uf = @uf, cidade = @cidade, bairro = @bairro, logradouro = @logradouro WHERE id_logradouro = @id;";
-            //executa o comando no banco de dados _ = comando.ExecuteNonQuery();
+            _ = comando.ExecuteNonQuery();
         }
 
         // método para deletar os dados aqui
@@ -125,7 +125,7 @@ namespace AcademiaDoZe_WPF.DataAcess
             conexao.Open();
             //realiza o DELETE
             comando.CommandText = @"DELETE FROM tb_logradouro WHERE id_logradouro = @id;";
-            //executa o comando no banco de dados _ = comando.ExecuteNonQuery();
+            _ = comando.ExecuteNonQuery();
         }
     }
 }

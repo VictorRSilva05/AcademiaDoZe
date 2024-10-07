@@ -40,7 +40,10 @@
             <Label x:Name="labelCidade" Content="Cidade" Canvas.Left="293" Canvas.Top="82" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.37"/>
             <TextBox x:Name="textbox_pais" Text="{Binding SelectedLogradouro.Pais}" TabIndex="6" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Width="391" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="180" VerticalAlignment="Top"/>
             <Label x:Name="labelPais" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <ComboBox x:Name="combobox_uf" Text="{Binding SelectedLogradouro.Uf}" TabIndex="5" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
+            <ComboBox x:Name="combobox_uf" Text="{Binding SelectedLogradouro.Uf}" TabIndex="5" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" IsSynchronizedWithCurrentItem="False">
+                <ComboBoxItem Content="pr"/>
+                <ComboBoxItem Content="sc"/>
+            </ComboBox>
             <Label x:Name="labelUf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
         <Button x:Name="buttonSalvar" TabIndex="7" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,313,0,0"/>

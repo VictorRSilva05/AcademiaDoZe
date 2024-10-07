@@ -42,13 +42,19 @@ namespace AcademiaDoZe_WPF.ViewModel
         private LogradouroRepository _repository;
 
         //Comandos para CRUD
-        public ICommand LogradouroAdicionarCommand { get; set; }
-        public ICommand LogradouroAtualizarCommand { get; set; }
-        public ICommand LogradouroRemoverCommand { get; set; }
+        public RelayCommand LogradouroAdicionarCommand { get; set; }
+        public RelayCommand LogradouroAtualizarCommand { get; set; }
+        public RelayCommand LogradouroRemoverCommand { get; set; }
         public LogradouroViewModel()
         {
             Logradouros = new ObservableCollection<Logradouro>();
             _repository = new LogradouroRepository();
+
+            //Inicializando os comandos
+            LogradouroAdicionarCommand = new RelayCommand(AdicionarLogradouro);
+            LogradouroAtualizarCommand = new RelayCommand(AtualizarLogradouro);
+            LogradouroRemoverCommand = new RelayCommand(RemoverLogradouro);
+
             GetAll();
         }
 
@@ -210,7 +216,7 @@ namespace AcademiaDoZe_WPF.ViewModel
             comando.Parameters.Add(logradouro);
             conexao.Open();
             comando.CommandText = @"INSERT INTO tb_logradouro (cep, pais, uf, cidade, bairro, logradouro) VALUES (@cep, @pais, @uf, @cidade, @bairro, @logradouro);";
-            //Executa o script na conexão e armazena o número de linhas afetadas. var linhas = comando.ExecuteNonQuery();
+            var linhas = comando.ExecuteNonQuery();
         }
 
         // método para atualizar os dados aqui
@@ -252,7 +258,7 @@ namespace AcademiaDoZe_WPF.ViewModel
             comando.Parameters.Add(logradouro);
             conexao.Open();
             comando.CommandText = @"UPDATE tb_logradouro SET cep = @cep, pais = @pais, uf = @uf, cidade = @cidade, bairro = @bairro, logradouro = @logradouro WHERE id_logradouro = @id;";
-            //executa o comando no banco de dados _ = comando.ExecuteNonQuery();
+            _ = comando.ExecuteNonQuery();
         }
 
         // método para deletar os dados aqui
@@ -270,7 +276,7 @@ namespace AcademiaDoZe_WPF.ViewModel
             conexao.Open();
             //realiza o DELETE
             comando.CommandText = @"DELETE FROM tb_logradouro WHERE id_logradouro = @id;";
-            //executa o comando no banco de dados _ = comando.ExecuteNonQuery();
+             _ = comando.ExecuteNonQuery();
         }
     }
 }
