@@ -1,64 +1,60 @@
-﻿<UserControl x:Class="AcademiaDoZe_WPF.View.CadastroColaboradorControl"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:AcademiaDoZe_WPF.View"
-             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-             mc:Ignorable="d" Height="581" Width="841">
-    <Grid Background="#FFEAE8E8" Margin="15,0,0,-2">
+﻿<Window
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:AcademiaDoZe_WPF.View"
+xmlns:System="clr-namespace:System;assembly=System.Runtime"
+xmlns:enums="clr-namespace:AcademiaDoZe_WPF"
+x:Class="AcademiaDoZe_WPF.View.CadastroColaboradorControl"
+mc:Ignorable="d"
+Title="CadastroColaboradorControl" Height="589" Width="987" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Resources>
+        <ObjectDataProvider MethodName="GetValues" ObjectType="{x:Type System:Enum}" x:Key="ColaboradorTipo">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enums:EnumColaboradorTipo"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <ObjectDataProvider MethodName="GetValues" ObjectType="{x:Type System:Enum}" x:Key="ColaboradorVinculo">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enums:EnumColaboradorVinculo"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    <Grid Margin="10,10,-98,-76" Background="#FF171717">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="709*"/>
+            <ColumnDefinition Width="179*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="289*"/>
-            <RowDefinition Height="294*"/>
+            <RowDefinition Height="535*"/>
+            <RowDefinition Height="112*"/>
         </Grid.RowDefinitions>
-        <Canvas Margin="37,60,204,291" Background="#FFFAFAFA" Grid.RowSpan="2">
-            <xctk:MaskedTextBox Mask="000\.000\.000\-00" Width="126" TabIndex="1"  GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="155" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Center" />
-
-            <Label x:Name="labelId" Content="ID" Canvas.Left="54" Canvas.Top="25" FontFamily="MiSans Latin VF" FontWeight="Bold" RenderTransformOrigin="0.543,-0.603"/>
-            <TextBox x:Name="textbox_id_colaborador" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="54" TextWrapping="Wrap" Canvas.Top="56" Width="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <xctk:MaskedTextBox Mask="(000) 0000-0000" Width="125" TabIndex="2"  GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="351" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Label x:Name="labelCpf" Content="CPF" Canvas.Left="155" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-            <Label x:Name="labelTelefone" Content="Telefone:" Canvas.Left="358" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
-            <Label x:Name="labelNome" Content="Nome:" Canvas.Left="54" Canvas.Top="92" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-            <TextBox x:Name="textbox_nome_colaborador" TabIndex="3" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="53" TextWrapping="Wrap" Canvas.Top="123" Width="498" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Label x:Name="labelNascimento" Content="Nascimento:" Canvas.Left="53" Canvas.Top="159" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <DatePicker x:Name="datepicker_nascimento" TabIndex="4" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="54" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24"/>
-            <TextBox x:Name="textbox_email_colaborador" TabIndex="5" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="224" TextWrapping="Wrap" Canvas.Top="190" Width="327" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="labelEmail" Content="Email:" Canvas.Left="225" Canvas.Top="159" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Canvas Background="#FFFAFAFA" RenderTransformOrigin="0.5,0.5" Height="213" Canvas.Top="218" VerticalAlignment="Center" Width="584" HorizontalAlignment="Center">
-                <Canvas.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleY="0.006"/>
-                        <RotateTransform/>
-                        <TranslateTransform Y="0.038"/>
-                    </TransformGroup>
-                </Canvas.RenderTransform>
-                <Label x:Name="label_id_endereco_colaborador" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBox x:Name="textbox_id_endereco_colaborador" TabIndex="6" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <xctk:MaskedTextBox Mask="00000-000" Width="124" TabIndex="7" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="153" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                <TextBox x:Name="textbox_logradouro_endereco_colaborador" TabIndex="8" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="254" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <Label x:Name="labelCep" Content="CEP" Canvas.Left="155" Canvas.Top="21" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-                <Label x:Name="labelLogradouro" Content="Logradouro:" Canvas.Left="297" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.268,0.17" FontFamily="MiSans Latin " FontWeight="Bold"/>
-                <Label x:Name="labelBairro" Content="Bairro:" Canvas.Left="57" Canvas.Top="84" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="MiSans Latin VF" FontWeight="Bold"/>
-                <TextBox x:Name="textbox_bairro_endereco_colaborador" TabIndex="9" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="55" TextWrapping="Wrap" Canvas.Top="113" Width="222" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                <TextBox x:Name="textbox_cidade_endereco_colaborador" TabIndex="10" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="294" TextWrapping="Wrap" Canvas.Top="114" Width="258" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <Label x:Name="labelCidade" Content="Cidade:" Canvas.Left="293" Canvas.Top="82" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.37"/>
-                <TextBox x:Name="textbox_pais_endereco_colaborador" TabIndex="12" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" TextWrapping="Wrap" Width="376" HorizontalAlignment="Left" Canvas.Left="177" Canvas.Top="180" VerticalAlignment="Center"/>
-                <Label x:Name="labelPais" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <ComboBox x:Name="combobox_uf_endereco_colaborador" TabIndex="11" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top"/>
-                <Label x:Name="labelUf" Content="UF:" Canvas.Left="57" Canvas.Top="146" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            </Canvas>
-        </Canvas>
-        <Button x:Name="buttonSalvar" TabIndex="13" Content="Salvar" Width="124" Height="27" FontFamily="MiSans Latin VF " FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,257,0,0" Grid.Row="1"/>
-        <DatePicker HorizontalAlignment="Left" IsTabStop="False" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Margin="655,176,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelAdmissao" Content="Admissão" HorizontalAlignment="Left" Margin="655,145,0,0" VerticalAlignment="Top" Width="138" FontFamily="MiSans Latin VF " FontWeight="Bold"/>
-        <RadioButton x:Name="radioButtonClt" IsTabStop="False" Content="CLT" HorizontalAlignment="Left" Margin="655,216,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="TipoEmprego"/>
-        <RadioButton x:Name="radioButtonEstagio" IsTabStop="False" Content="Estágio" HorizontalAlignment="Left" Margin="655,236,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="TipoEmprego"/>
-        <RadioButton x:Name="radioButtonAdministrador" IsTabStop="False" Content="Administrador" HorizontalAlignment="Left" Margin="655,37,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
-        <RadioButton x:Name="radioButtonAtendente" IsTabStop="False" Content="Atendente" HorizontalAlignment="Left" Margin="655,57,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
-        <RadioButton x:Name="radioButtonInstrutor" IsTabStop="False" Content="Instrutor" HorizontalAlignment="Left" Margin="655,77,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" GroupName="NivelAcesso" Grid.Row="1"/>
-        <Label x:Name="labelCadastrarColaborador" IsTabStop="False" Content="Cadastrar Colaborador" HorizontalAlignment="Left" Margin="37,2,0,0" VerticalAlignment="Top" FontFamily="MiSans Latin VF " FontWeight="Bold" FontSize="36"/>
-
+        <Label x:Name="labelAtiva" Content="Cadastrar Colaborador" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" BorderBrush="#FF4A1E1E" Foreground="White" FontSize="20"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textBoxId" HorizontalAlignment="Left" Margin="10,74,0,0" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="70" IsEnabled="False"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="113,48,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textBoxCpf" HorizontalAlignment="Left" Margin="106,74,0,0" TextWrapping="Wrap" Text="{Binding Cpf}" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="256,43,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textBoxTelefone" HorizontalAlignment="Left" Margin="256,74,0,0" TextWrapping="Wrap" Text="{Binding Telefone}" VerticalAlignment="Top" Width="182"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textoBoxNome" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="568"/>
+        <Label Content="Nascimento:" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <DatePickerTextBox x:Name="textBoxNascimento" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Text="{Binding Nascimento}" Width="150"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" Margin="172,146,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textoBoxEmail" HorizontalAlignment="Left" Margin="172,177,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="406"/>
+        <local:CadastroLogradouroControl x:Name="userControlLogradouro" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Height="207" IsEnabled="True" Width="625"/>
+        <Label Content="Número:" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textBoxNumero" HorizontalAlignment="Left" Margin="10,445,0,0" TextWrapping="Wrap" Text="{Binding Numero}" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Complemento:" HorizontalAlignment="Left" Margin="172,414,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4"/>
+        <TextBox x:Name="textBoxComplemento" HorizontalAlignment="Left" Margin="172,445,0,0" TextWrapping="Wrap" Text="{Binding Complemento}" VerticalAlignment="Top" Width="182"/>
+        <Label x:Name="labelAdmissao" Content="Admissão:" HorizontalAlignment="Left" Margin="688,84,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4" Grid.ColumnSpan="2"/>
+        <DatePickerTextBox x:Name="datePickerAdimissao" HorizontalAlignment="Left" Margin="688,123,0,0" VerticalAlignment="Top" Text="{Binding Admissao}" Width="150" Grid.ColumnSpan="2"/>
+        <Label x:Name="labelTipo" Content="Tipo:" HorizontalAlignment="Left" Margin="688,168,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4" RenderTransformOrigin="1.798,0.648" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="listTipo" HorizontalAlignment="Left" Margin="688,207,0,0" VerticalAlignment="Top" Width="150" Height="80" ItemsSource="{Binding Source={StaticResource ColaboradorTipo}}" SelectedItem="{Binding Tipo}" Grid.ColumnSpan="2"/>
+        <Label x:Name="labelVinculo" Content="Vínculo:" HorizontalAlignment="Left" Margin="688,292,0,0" VerticalAlignment="Top" Foreground="#FFC4C4C4" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="listVinculo" HorizontalAlignment="Left" Margin="688,323,0,0" VerticalAlignment="Top" Width="150" Height="60" ItemsSource="{Binding Source={StaticResource ColaboradorVinculo}}" SelectedItem="{Binding Vinculo}" Grid.ColumnSpan="2"/>
+        <Button Content="Salvar" IsDefault="True" Command="{Binding SalvarColaboradorCommand}" HorizontalAlignment="Left" Margin="400,500,0,0" VerticalAlignment="Top" FontSize="15" Width="150" Height="35" Grid.RowSpan="2"/>
+        <Button Content="Cancelar" IsCancel="True" HorizontalAlignment="Left" Margin="235,500,0,0" VerticalAlignment="Top" FontSize="15" Width="150" Height="35" Grid.RowSpan="2"/>
     </Grid>
-</UserControl>
+</Window>

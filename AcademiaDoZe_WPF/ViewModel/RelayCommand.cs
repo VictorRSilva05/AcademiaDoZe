@@ -3,12 +3,17 @@ namespace AcademiaDoZe_WPF.ViewModel;
 public class RelayCommand : ICommand
 {
     private readonly Action<object> _execute;
-    private readonly Func<object, bool> _canExecute;
-    public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
+    private readonly Predicate<object> _canExecute;
+    // Event required by ICommand
+    public event EventHandler CanExecuteChanged;
+    // Constructors
+    public RelayCommand(Action<object> execute) : this(execute, null) { }
+    public RelayCommand(Action<object> execute, Predicate<object> canExecute)
     {
-        _execute = execute;
+        _execute = execute ?? throw new ArgumentNullException(nameof(execute));
         _canExecute = canExecute;
     }
+    // ICommand Members
     public bool CanExecute(object parameter)
     {
         return _canExecute == null || _canExecute(parameter);
@@ -17,9 +22,9 @@ public class RelayCommand : ICommand
     {
         _execute(parameter);
     }
-    public event EventHandler CanExecuteChanged
+    // Method to raise the CanExecuteChanged event
+    public void RaiseCanExecuteChanged()
     {
-        add { CommandManager.RequerySuggested += value; }
-        remove { CommandManager.RequerySuggested -= value; }
+        CanExecuteChanged?.Invoke(this, EventArgs.Empty);
     }
 }

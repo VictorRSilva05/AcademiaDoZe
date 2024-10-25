@@ -1,11 +1,13 @@
-﻿using System.Windows.Controls;
+﻿using AcademiaDoZe_WPF.ViewModel;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace AcademiaDoZe_WPF.View
 {
     /// <summary>
     /// Interaction logic for CadastroColaboradorControl.xaml
     /// </summary>
-    public partial class CadastroColaboradorControl : UserControl
+    public partial class CadastroColaboradorControl : Window
     {
         public CadastroColaboradorControl()
         {
@@ -13,9 +15,11 @@ namespace AcademiaDoZe_WPF.View
             this.Loaded += CadastroColaboradorControl_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            textbox_id_colaborador.Focus();
+            textBoxId.Focus();
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+
+            DataContext = new ColaboradorCadastroViewModel();
         }
 
         private void CadastroColaboradorControl_Loaded(object sender, System.Windows.RoutedEventArgs e)

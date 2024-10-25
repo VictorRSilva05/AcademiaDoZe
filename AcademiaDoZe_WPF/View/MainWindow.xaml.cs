@@ -48,14 +48,22 @@ namespace AcademiaDoZe_WPF.View
         {
             CadastroAlunoControl cadastroAlunoControl = new CadastroAlunoControl();
 
-            Frame_main.Content = cadastroAlunoControl;
+            cadastroAlunoControl.Show();
+            if (Frame_main.Content is not PageListaAluno)
+            {
+                Frame_main.Content = new PageListaAluno();
+            }
         }
 
         private void button_colaborador_Click(object sender, RoutedEventArgs e)
         {
             CadastroColaboradorControl cadastroColaboradorControl = new CadastroColaboradorControl();
 
-            Frame_main.Content = cadastroColaboradorControl;
+            cadastroColaboradorControl.Show();
+            if (Frame_main.Content is not PageListaColaborador)
+            {
+                Frame_main.Content = new PageListaColaborador();
+            }
         }
 
         private void button_senha_Click(object sender, RoutedEventArgs e)

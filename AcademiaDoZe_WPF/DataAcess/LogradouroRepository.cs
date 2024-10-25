@@ -127,5 +127,35 @@ namespace AcademiaDoZe_WPF.DataAcess
             comando.CommandText = @"DELETE FROM tb_logradouro WHERE id_logradouro = @id;";
             _ = comando.ExecuteNonQuery();
         }
+
+        public Logradouro GetOne(Logradouro dado)
+        {
+            using var conexao = factory.CreateConnection(); //Cria conexão
+            conexao!.ConnectionString = ConnectionString; //Atribui a string de conexão
+            using var comando = factory.CreateCommand(); //Cria comando
+            comando!.Connection = conexao; //Atribui conexão
+
+            //Adiciona parâmetro (@campo e valor)
+            var cep = comando.CreateParameter();
+            cep.ParameterName = "@cep";
+            cep.Value = dado.Cep.Trim();
+            comando.Parameters.Add(cep);
+            conexao.Open();
+            comando.CommandText = @"SELECT id_logradouro, cep, pais, uf, cidade, bairro, logradouro FROM tb_logradouro WHERE TRIM(cep) = @cep;";
+            using var reader = comando.ExecuteReader();
+            // carrega os dados para ser retornado e utilizado no databinding
+            Logradouro dadosRetorno = new Logradouro();
+            while (reader.Read())
+            {
+                dadosRetorno.Id = reader.GetInt32(0);
+                dadosRetorno.Cep = reader.GetString(1);
+                dadosRetorno.Pais = reader.GetString(2);
+                dadosRetorno.Uf = reader.GetString(3);
+                dadosRetorno.Cidade = reader.GetString(4);
+                dadosRetorno.Bairro = reader.GetString(5);
+                dadosRetorno.Nome = reader.GetString(6);
+            }
+            return dadosRetorno;
+        }
     }
 }

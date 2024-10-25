@@ -16,17 +16,6 @@ namespace AcademiaDoZe_WPF.ViewModel
 {
     public class LogradouroViewModel : ViewModelBase
     {
-
-        // implementa a interface INotifyPropertyChanged
-        /*
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        */
-
-
         // utilizados no databinding
         public ObservableCollection<Logradouro> Logradouros { get; set; }
         private Logradouro _selectedLogradouro;
@@ -37,6 +26,10 @@ namespace AcademiaDoZe_WPF.ViewModel
             {
                 _selectedLogradouro = value;
                 OnPropertyChanged("SelectedLogradouro");
+                // libera somente se houver um logradouro selecionado
+                LogradouroAtualizarCommand.RaiseCanExecuteChanged();
+                LogradouroRemoverCommand.RaiseCanExecuteChanged();
+                LogradouroAdicionarCommand.RaiseCanExecuteChanged();
             }
         }
         private LogradouroRepository _repository;
@@ -56,6 +49,12 @@ namespace AcademiaDoZe_WPF.ViewModel
             LogradouroRemoverCommand = new RelayCommand(RemoverLogradouro);
 
             GetAll();
+        }
+
+        private bool CanExecuteSubmit(object parameter)
+        {
+            // validação utilizada para liberar ou não os botões de atualizar e remover na view
+            return SelectedLogradouro != null;
         }
 
         public void GetAll()
@@ -140,6 +139,7 @@ namespace AcademiaDoZe_WPF.ViewModel
                 }
             }
         }
+        public RelayCommand FiltrarLogradouroCommand { get; set; }
         public LogradouroViewModel(string providerName, string connectionString)
         {
             ConnectionString = connectionString;
@@ -148,7 +148,19 @@ namespace AcademiaDoZe_WPF.ViewModel
             factory = DbProviderFactories.GetFactory(ProviderName);
             // inicializa a lista de logradouros
             Logradouros = new ObservableCollection<Logradouro>();
+            FiltrarLogradouroCommand = new RelayCommand(FiltrarLogradouro);
         }
+
+        private void FiltrarLogradouro(object parameter)
+        {
+            string cep = parameter as string;
+            var logradouro = new Logradouro
+            {
+                Cep = cep
+            };
+            SelectedLogradouro = _repository.GetOne(logradouro);
+        }
+
         // implementa os métodos de CRUD, utilizando DBProviderFactory
         // método para carregar os dados aqui
         // método para inserir os dados aqui
@@ -278,5 +290,6 @@ namespace AcademiaDoZe_WPF.ViewModel
             comando.CommandText = @"DELETE FROM tb_logradouro WHERE id_logradouro = @id;";
              _ = comando.ExecuteNonQuery();
         }
+
     }
 }

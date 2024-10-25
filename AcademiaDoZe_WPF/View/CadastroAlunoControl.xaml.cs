@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using AcademiaDoZe_WPF.ViewModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace AcademiaDoZe_WPF.View
@@ -6,19 +7,20 @@ namespace AcademiaDoZe_WPF.View
     /// <summary>
     /// Interaction logic for CadastroAlunoControl.xaml
     /// </summary>
-    public partial class CadastroAlunoControl : UserControl
+    public partial class CadastroAlunoControl : Window
     {
         public CadastroAlunoControl()
         {
             InitializeComponent();
-            this.Loaded += UserControl_Loaded;
+            this.Loaded += Window_Loaded;
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
-            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);            textbox_id_aluno.Focus();
+            this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);            
             this.KeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
             this.PreviewKeyDown += new System.Windows.Input.KeyEventHandler(ClassFuncoes.Window_KeyDown);
+            DataContext = new AlunoCadastroViewModel();
         }
 
-        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             ClassFuncoes.AjustaResources(this);
         }
@@ -50,6 +52,11 @@ namespace AcademiaDoZe_WPF.View
                 PasswordBox passwordBox = (PasswordBox)sender;
                 passwordBox.Background = cor;
             }
+        }
+
+        private void userControlLogradouro_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
