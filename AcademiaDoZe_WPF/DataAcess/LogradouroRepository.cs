@@ -138,8 +138,10 @@ namespace AcademiaDoZe_WPF.DataAcess
             //Adiciona parâmetro (@campo e valor)
             var cep = comando.CreateParameter();
             cep.ParameterName = "@cep";
-            cep.Value = dado.Cep.Trim();
+            cep.Value = dado.Cep;
             comando.Parameters.Add(cep);
+
+
             conexao.Open();
             comando.CommandText = @"SELECT id_logradouro, cep, pais, uf, cidade, bairro, logradouro FROM tb_logradouro WHERE TRIM(cep) = @cep;";
             using var reader = comando.ExecuteReader();

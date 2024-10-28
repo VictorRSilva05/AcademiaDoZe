@@ -1,9 +1,4 @@
 ﻿using AcademiaDoZe_WPF.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace AcademiaDoZe_WPF.ViewModel
@@ -40,6 +35,8 @@ namespace AcademiaDoZe_WPF.ViewModel
             _aluno.LogradouroId = SelectedLogradouro.Id;
             return _aluno;
         }
-    
+
+
+
     }
 }

@@ -28,7 +28,7 @@
                     <TranslateTransform Y="0.038"/>
                 </TransformGroup>
             </Canvas.RenderTransform>
-            <TextBox Width="126" Text="{Binding SelectedLogradouro.Cep}" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="153" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBox x:Name="text_cep" Width="126" Text="{Binding SelectedLogradouro.Cep}" TabIndex="1" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="153" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Label x:Name="labelId" Content="ID" Canvas.Left="53" Canvas.Top="21" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_id" Text="{Binding SelectedLogradouro.Id}" TabIndex="0" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="56" TextWrapping="Wrap" Canvas.Top="51" Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBox x:Name="textbox_logradouro" Text="{Binding SelectedLogradouro.Nome}" TabIndex="2" GotFocus="Box_GotFocus" LostFocus="Box_LostFocus" Canvas.Left="297" TextWrapping="Wrap" Canvas.Top="49" Width="271" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -42,7 +42,7 @@
             <Label x:Name="labelPais" Content="País:" Canvas.Left="176" Canvas.Top="152" FontFamily="MiSans Latin VF" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button Content="Filtrar"
                             Command="{Binding FiltrarLogradouroCommand}"
-                            CommandParameter="{Binding Text, ElementName=textBoxCep}"
+                            CommandParameter="{Binding Text, ElementName=text_cep}"
                             HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Canvas.Left="234" Canvas.Top="73" />
             <ComboBox x:Name="combobox_uf" Text="{Binding SelectedLogradouro.Uf}" TabIndex="5" Canvas.Left="55" Canvas.Top="178" Width="74" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" IsSynchronizedWithCurrentItem="False">
                 <ComboBoxItem Content="pr"/>
