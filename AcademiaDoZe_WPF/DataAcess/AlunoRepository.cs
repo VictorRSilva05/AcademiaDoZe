@@ -44,12 +44,12 @@ namespace AcademiaDoZe_WPF.DataAcess
                     Cpf = reader.GetString(1),
                     Telefone = reader.GetString(2),
                     Nome = reader.GetString(3),
-                    Nascimento = reader.GetDateTime(4),
+                    //Nascimento = reader.GetDateTime(4),
                     Email = reader.GetString(5),
                     LogradouroId = reader.GetInt32(6),
                     Numero = reader.GetString(7),
-                    Complemento = reader.GetString(8),
-                    Senha = reader.GetString(9)
+                    //Complemento = reader.GetString(8),
+                    //Senha = reader.GetString(9)
                 });
             }
             return dadosRetorno;
